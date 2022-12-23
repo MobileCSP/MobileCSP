@@ -152,7 +152,9 @@ Learning Activities
     </center>
     <p></p>
     <h3>An Efficient Algorithm</h3>
-    <p>There is an efficient algorithm for the guessing game problem, known as the <span class="hover vocab yui-wk-div" data-id="binary search">binary search </span> algorithm. It is called in because you repeatedly diaryvide the search space into two and eliminate one half of the search space. 
+    <p>There is an efficient algorithm for the guessing game problem, known as the 
+    <span class="hover vocab yui-wk-div" data-id="binary search">binary search </span> algorithm. It is called
+     binary search because you repeatedly divide the search space into two and eliminate one half of the search space. 
       Click <a href="https://mobile-csp.org/webapps/search/binarysearch.html" target="_blank">here</a> to see 
       the pseudocode or see the algorithm comparison section below.
     </p>
