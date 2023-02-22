@@ -33,7 +33,7 @@ Learning Activities
 
 	<h3>Warm Up Activity: Create Grading Rubric</h3>
 	<p>
-	Use the <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf" target="_blank" title="">Create Performance Task Scoring Guidelines </a> to grade the two <a href="https://course.mobilecsp.org/mobilecsp/unit?unit=127&amp;lesson=203" target="_blank">Create Performance Task Samples in lesson 8.9</a> to familiarize yourself with the rubric and Create write-ups.</p>
+	Use the <a href="https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> to grade the two <a href="https://course.mobilecsp.org/mobilecsp/unit?unit=127&amp;lesson=203" target="_blank">Create Performance Task Samples in lesson 8.9</a> to familiarize yourself with the rubric and Create write-ups.</p>
 	
 	<h3>Iterative Design Thinking Process</h3>
 

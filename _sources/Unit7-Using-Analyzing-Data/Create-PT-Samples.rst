@@ -82,7 +82,7 @@ Create PT Prep and Samples
 	
 
 	<h3>Activity</h3>
-	<p>Select at least two samples from the list below and try scoring them with the <a href="https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf" target="_blank" title="">Create Performance Task Rubric</a>. When you are done reviewing the samples, score your Quiz App from Lesson 5.6 or exchange and score your classmate's Quiz app.</p>
+	<p>Select at least two samples from the list below and try scoring them with the <a href="https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Rubric</a>. When you are done reviewing the samples, score your Quiz App from Lesson 5.6 or exchange and score your classmate's Quiz app.</p>
 	
 Sample 1 - 2021's Pilot Sample A
 --------------------------------
