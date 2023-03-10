@@ -23,7 +23,7 @@ Introduction and Goals
 	<p>Before beginning, please review the following:
 	  </p><ul>
 	    <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions </a> </li>
-	    <li><a href="https://apcentral.collegeboard.org/pdf/ap21-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
+	    <li><a href="https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
 	</ul>
 	
 Learning Activities
@@ -109,7 +109,7 @@ Resources
 	<ul>
 	
 	      <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank" title="">Create Performance Task Description and Instructions </a> </li>
-	    <li><a href="https://apcentral.collegeboard.org/pdf/ap21-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
+	    <li><a href="https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
 	<li>  <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">How To: Create a Portfolio Write-Up</a></li>
 	    <li><a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">AP Create template and checklists</a> </li>
 	    <li> <a href="https://sites.google.com/site/mobilecspportfoliohelp/performance-tasks/create-1" target="_blank">Portfolio help site</a></li>
