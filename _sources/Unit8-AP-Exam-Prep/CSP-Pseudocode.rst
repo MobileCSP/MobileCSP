@@ -25,11 +25,11 @@ AP CSP Pseudocode
 	  <li><a href="../Unit8-AP-Exam-Prep/Tracing-Exercises.html" target="_blank">Pseudocode Tracing Exercises (the next lesson)   </a></li>  
 	 </ul>
 	
-	 <p>The following <a href="https://docs.google.com/document/d/1ObiA0u3Ipo9Cx30p3facy0j21oiw54L7vJkIpd7-Dys/view" target="_blank">document</a> by Mobile CSP teacher Timothy Clark from Gilroy Unified School District compares AP pseudocode blocks to App Inventor blocks: <br>
-	   <iframe src="https://docs.google.com/document/d/122TCLup7PdG7wx43CJdk7vOQ-k1YsU3k1rc1uP9ePho/view" width="100%" height="500px"></iframe>
+	 <p>The following <a href="https://docs.google.com/document/d/19cnXvsacgehuV7G1HN6jH_FEFiKW4Kbi1ZtmjsfXQno/view" target="_blank">document</a> by Mobile CSP teacher Timothy Clark from Gilroy Unified School District compares AP pseudocode blocks to App Inventor blocks: <br>
+	   <iframe src="https://docs.google.com/document/d/19cnXvsacgehuV7G1HN6jH_FEFiKW4Kbi1ZtmjsfXQno/view" width="100%" height="500px"></iframe>
 	   
-	 <p>A Mobile CSP teacher Mark Eisenhardt has also developed a <a href="https://drive.google.com/open?id=1FyEsR_saOkdyvhKHbOtAvqWOiZCkRJrHstXsW7FhUWw" target="_blank">slide deck</a> that shows the App Inventor blocks next to the relevant sections of the reference sheet (shown below).</p>
+	 <p>A Mobile CSP teacher Mark Eisenhardt has also developed a <a href="https://docs.google.com/presentation/d/1NPRHTSRSPKf7EsDve4tf0MuxdVV3da7c_yeo8_DhngI/view" target="_blank">slide deck</a> that shows the App Inventor blocks next to the relevant sections of the reference sheet (shown below).</p>
 	
 	
-	<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSvx7lOVKV-TZXtMbAI5f_nbQW4AJ_xCFS75wqmehUvX2xvNYa5Paglqh07J_aqV-cla_trZkw1dnGy/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+	<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSBJmJJn_JuXyyShnlEXEoqmqsCm-1Y8JjUvw0PWIQeXnsTKz9xzS_ckkTmpeiE021CUAj4aXH63TCU/embed?start=true&loop=true&delayms=5000" frameborder="0" width="100%" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
 
