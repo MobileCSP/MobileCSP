@@ -14,10 +14,10 @@ AP CS A and Java
 
 .. raw:: html
 
-	<p>There is a more advanced AP Computer Science course called  <b><a href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a" target="_blank">AP CS A</a></b>, which uses the Java programming language. If your school doesn't offer it, talk to your teachers and principal about adding the course.</p>
+	<p>There is a more advanced AP Computer Science course called  <b><a href="https://apstudent.collegeboard.org/apcourse/ap-computer-science-a" target="_blank">AP CSA</a></b>, which uses the Java programming language. If your school doesn't offer it, talk to your teachers and principal about adding the course.</p>
 	
 	
-	<p><a href="https://runestone.academy/runestone/static/csawesome/index.html" target="_blank"><img src="https://runestone.academy/runestone/static/csawesome/_images/CSAwesomeLogo3.png" width=200 style="float:left;border:5px"></a>Mobile CSP is piloting a new curriculum for AP CS A called <a href="https://runestone.academy/runestone/static/csawesome/index.html" target="_blank">CS Awesome!</a>. You may want to try your hand at some <a href="https://runestone.academy/runestone/static/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html" target="_blank">object-oriented programming in Java with Turtles in Unit 2</a>.
+	<p><a href="https://runestone.academy/ns/books/published/csawesome/index.html?mode=browsing" target="_blank"><img src="https://runestone.academy/ns/books/published/csawesome/_images/CSAwesomeLogo.png" width=200 style="float:left;border:5px"></a> is a free AP CSA Java curriculum that supports students transitioning from AP CSP to AP CSA.  You may want to try your hand at some <a href="https://runestone.academy/ns/books/published/csawesome/Unit2-Using-Objects/topic-2-1-objects-intro-turtles.html?mode=browsing" target="_blank">object-oriented programming in Java with Turtles in Unit 2</a>.
 	 
 	<p>Here is a <a href="https://docs.google.com/document/d/1xhSAfzF1pH0nlUL94lmpdvd8fO4sa38cOuunXnJU4Bs/edit?usp=sharing" target="_blank">table comparing App Inventor blocks and AP CSP pseudocode with Java commands</a>.
 	
@@ -64,12 +64,12 @@ Processing
 	 <li><a href="http://sketchpad.cc/" target="_blank">http://sketchpad.cc/</a>
 	</ul>
 	
-Cyber Security
+Cybersecurity
 --------------
 
 .. raw:: html
 
-	<p>Cyber Security is also a fun topic to explore. There are Capture the Flag (CTF) contests for high school students where participants can break codes and find hidden flags. You can explore the problems even after the competitions end. Here are some high school CTFs and tutorials with practice problems:</p>
+	<p>Cybersecurity is also a fun topic to explore. There are Capture the Flag (CTF) contests for high school students where participants can break codes and find hidden flags. You can explore the problems even after the competitions end. Here are some high school CTFs and tutorials with practice problems:</p>
 	<ul>
 	 <li><a href="https://picoctf.com/" target="_blank">Pico CTF</a></li>
 	 <li><a href="https://pactf.com/" target="_blank">Phillips Academy CTF (runs in mid-May)</a></li>

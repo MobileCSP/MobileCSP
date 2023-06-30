@@ -425,7 +425,7 @@ Self-Check
 
     .. raw:: html
 
-        <img class="yui-img selected" src="https://sites.google.com/site/appinventorcourse/ata/drawSquareError.png"/>
+        <img class="yui-img selected" src="../_static/assets/img/squareBug.png" width="300px"/>
 
 
 .. raw:: html
