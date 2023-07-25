@@ -30,11 +30,11 @@ Python
 
 .. raw:: html
 
-	<p>Python is an excellent text-based programming language that's easy to pick up. Here's an online, interactive <a href="https://www.codecademy.com/learn/learn-python" target="_blank">Code Academy Python tutorial</a> that you can try (the Python 2 course is free, but you have to pay for the Python 3 course which is with a Pro subscription). Code Academy also offers short tutorials in Java, HTML, Javascript, and other languages.</p>
+	<p>Python is an excellent text-based programming language that's easy to pick up. Try some fun Python projects in the next two lessons!</p>
 	
-	<p>Another alternative is <a href="https://earsketch.gatech.edu/landing/#/" target="_blank">EarSketch with Python</a>, which is a great introduction to learn Python coding through music composition!</p>
+	<p>You can also try <a href="https://earsketch.gatech.edu/landing/#/" target="_blank">EarSketch with Python</a>, which is a great introduction to learn Python coding through music composition!</p>
 	
-	<p><a href="https://codecombat.com/play">Code Combat</a> is a platform that has free starter levels to learn Python or Javascript while playing in a computer game.</p>
+	<p>And <a href="https://codecombat.com/play">Code Combat</a> is a platform that has free starter levels to learn Python or Javascript while playing in a computer game.</p>
 	
 	
 Web Design with HTML and Javascript

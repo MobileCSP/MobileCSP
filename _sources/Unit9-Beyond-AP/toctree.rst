@@ -14,6 +14,8 @@ Beyond the AP CSP Exam
 	Careers-CS.rst
 	Films-CS.rst
 	Transitioning-Text-Lang.rst
+	Python-Intro.rst
+	Python-Loops-Lists.rst
 	Magic-8-Tutorial.rst
 	Persisting-Photos-Tutorial.rst
 	Compass-App.rst

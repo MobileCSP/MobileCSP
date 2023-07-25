@@ -52,11 +52,11 @@ Survey
 
 .. raw:: html
 
-	<p>Please log into Runestone and fill out the following survey. You do not have to answer any of the following questions, but if you do, it will give us valuable information about who is using this ebook. Your answers to all questions on this site will be used for educational research and to improve the ebook. Any identifying information, such as your name, will be removed from the data before it is analyzed and used in publications (<a href="https://runestone.academy/runestone/default/privacy">Runestone Academy Privacy Policy</a>).</p>
-	
-.... shortanswer:: mcsp-1-1-1
+    <p>Please log into Runestone and fill out the following survey. You do not have to answer any of the following questions, but if you do, it will give us valuable information about who is using this ebook. Your answers to all questions on this site will be used for educational research and to improve the ebook. Any identifying information, such as your name, will be removed from the data before it is analyzed and used in publications (<a href="https://runestone.academy/runestone/default/privacy">Runestone Academy Privacy Policy</a>).</p>
+    
+.. .. shortanswer:: mcsp-1-1-1
 
-    What is your name?
+..    What is your name?
       
 .. poll:: mcsp-1-1-2
     :option_1:  Student
@@ -66,56 +66,56 @@ Survey
     I am a:
     
 .. poll:: mcsp-1-1-3
-	:option_1: Middle school student
-	:option_2: 9th grade student
-	:option_3: 10th grade student
-	:option_4: 11th grade student
-	:option_5: 12th grade student
-	:option_6: College student
-	:option_7: Not a student
-	:option_8: Other
-	
-	I am a:
+    :option_1: Middle school student
+    :option_2: 9th grade student
+    :option_3: 10th grade student
+    :option_4: 11th grade student
+    :option_5: 12th grade student
+    :option_6: College student
+    :option_7: Not a student
+    :option_8: Other
+    
+    I am a:
 
 .. poll:: mcsp-1-1-4
-	:option_1: Female
-	:option_2: Male
-	:option_3: Non-binary
+    :option_1: Female
+    :option_2: Male
+    :option_3: Non-binary
     :option_4: Other
-	:option_5: Prefer not to answer
-	
-	I am a:
-	
+    :option_5: Prefer not to answer
+    
+    I am a:
+    
 .. poll:: mcsp-1-1-5
-	:option_1: Latina/o or Hispanic
-	:option_2: American Indian or Alaska Native
-	:option_3: Asian
-	:option_4: Black or African-American
-	:option_5: Native Hawaiian or Other Pacific Islander
-	:option_6: White
-	:option_7: Multiple races/ethnicities
-	:option_8: Other
-	:option_9: Prefer not to answer
-	
-	What ethnicity and/or race do you identify with? (optional)
-	
+    :option_1: Latina/o or Hispanic
+    :option_2: American Indian or Alaska Native
+    :option_3: Asian
+    :option_4: Black or African-American
+    :option_5: Native Hawaiian or Other Pacific Islander
+    :option_6: White
+    :option_7: Multiple races/ethnicities
+    :option_8: Other
+    :option_9: Prefer not to answer
+    
+    What ethnicity and/or race do you identify with? (optional)
+    
 .. poll:: mcsp-1-1-6
-	:option_1: Yes, blind or visually impaired
-	:option_2: Yes, deaf or hard of hearing
-	:option_3: Yes, a mobility impairment
-	:option_4: Yes, a learning disability (e.g., ADHD, dyslexia)
-	:option_5: Yes, a mental health disorder
-	:option_6: Yes, a disability or impairment listed above
-	:option_7: No
-	:option_8: Prefer not to answer
-	
-	Have you been diagnosed with a disability or impairment (especially with an IEP or 504 plan)? (optional)
+    :option_1: Yes, blind or visually impaired
+    :option_2: Yes, deaf or hard of hearing
+    :option_3: Yes, a mobility impairment
+    :option_4: Yes, a learning disability (e.g., ADHD, dyslexia)
+    :option_5: Yes, a mental health disorder
+    :option_6: Yes, a disability or impairment listed above
+    :option_7: No
+    :option_8: Prefer not to answer
+    
+    Have you been diagnosed with a disability or impairment (especially with an IEP or 504 plan)? (optional)
 
 .. shortanswer:: mcsp-1-1-7
-	
-	In what state do you reside?
-	
+    
+    In what state do you reside?
+    
 .. shortanswer:: mcsp-1-1-8
-	
-	In what country do you reside?
-	
+    
+    In what country do you reside?
+    
