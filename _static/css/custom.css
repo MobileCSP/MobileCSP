@@ -45,7 +45,9 @@ blockquote,
   font-size: inherit;
 }
 
-td, th { 
+td, th,
+.ptx-runestone-container td, .ptx-runestone-container th, 
+.runestone-sphinx td, .runestone-sphinx th  { 
      text-align: left; 
      padding: 5px;
      border: 1px solid black;
