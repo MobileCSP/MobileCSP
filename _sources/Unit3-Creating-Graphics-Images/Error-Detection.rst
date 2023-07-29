@@ -107,7 +107,7 @@ Learning Activities
 	<tr>
 		<td valign=top><iframe height="530" src="https://mobile-csp.org/webapps/parity/ParityMagic.html" style="border: 0;" title="Parity App" width="450"></iframe>
     </td>
-    <td>
+    <td style="padding-left: 5px;">
 	   The widget on the left was created by Mobile CSP student Richard Zheng of Westhill High School in Stamford, CT, to help figure out how the card trick works. 
 	   <br/><br/>
 	   To follow up on the hint given in the video, after the demonstrator has added an extra row and column to a 5x5 array of cards (or Androids in this case) -- supposedly to make the problem more difficult  -- the Androids will appear as they do 

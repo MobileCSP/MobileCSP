@@ -7,6 +7,7 @@ Impacts of CS Blown to Bits BB
 
 .. raw:: html
 
+    <div class="MCSP-lesson-content">
     <!-- Custom Scripts -->
     <script src="../_static/assets/lib/lessons/tipped.js" type="text/javascript"></script>
     <script src="../_static/assets/lib/lessons/Framework2020.js" type="text/javascript"></script>

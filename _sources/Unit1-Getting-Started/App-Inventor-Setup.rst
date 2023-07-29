@@ -7,6 +7,7 @@ App Inventor Setup
 
 .. raw:: html
 
+     <div class="MCSP-lesson-content">
      <h3 id="est-length">Time Estimate: 15-45 minutes</h3>
 
 Introduction and Goals
@@ -104,3 +105,4 @@ Learning Activities
      <p>If everything is configured properly, you should see the Welcome app on your device or emulator. You should see a message and the Mobile CSP logo. You should also hear a round of applause for your great work! Try clicking on the logo too and changing some things like the notifier message or the background color as described in the embedded tutorial. </p>
 
      <p>If the app is not running correctly, you may need to retrace your setup steps to make sure you performed all of the necessary steps. Make sure your mobile device and your computer are on the same WiFi or other network. If the app seems frozen, try Connect/Reset Connection and then try Connect/AI Companion again. See the <a href="http://appinventor.mit.edu/explore/ai2/support/troubleshooting.html" target="_blank">Troubleshooting</a> page or try another method of connecting your device such as <a href="http://appinventor.mit.edu/explore/ai2/setup-device-usb.html" target="_blank">USB</a> or using the <a href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html" target="_blank">emulator</a>.</p>
+     </div>

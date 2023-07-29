@@ -217,8 +217,9 @@ Learning Activities
 
     <p>
     <p>A <span class="hover vocab yui-wk-div" data-id='variable'>variable</span> provides a way to name a memory location in your program to hold different values. It is a <b>data abstraction</b> that exists in all programming languages. In MIT App Inventor, we set up a <span class="hover vocab yui-wk-div" data-id='variable'>variable</span> using the <i>initialize global <span class="hover vocab yui-wk-div" data-id='variable'>variable</span></i> block. The <i>get</i> block is used to get the <span class="hover vocab yui-wk-div" data-id='variable'>variable</span>'s current value whenever needed in the program. The <i>set </i>block is used to assign or change the value of the <span class="hover vocab yui-wk-div" data-id='variable'>variable</span>.
-    <br/> <img src="../_static/assets/img/initdotsize.png" width="20%"/>
-    <img src="../_static/assets/img/getdotsize.png" width="20%"/> <img src="../_static/assets/img/setdotsize.png" width="20%"/>
+    <br/> <img src="../_static/assets/img/initdotsize.png" width="30%"/>
+    <img src="../_static/assets/img/getdotsize.png" width="25%"/> 
+    <img src="../_static/assets/img/setdotsize.png" width="30%"/>
     <br/>
     </p>
     <p> The AP CS Principles Exam does not have a designated programming language. It uses <span class="hover vocab yui-wk-div" data-id='pseudocode'>pseudocode</span> which is a cross between computer code and everyday English. 

@@ -297,7 +297,7 @@ Self-Check
 .. fillintheblank:: mcsp-3-3-1
     :casei:
 
-    In the video, you learned how black and white images can be represented using bits and numbers. What letter of the alphabet would be represented by the following set of numbers representing its RLE compression? You can use the interactive pixel grid above under Practice or in another tab to work this out.
+    In the video, you learned how black and white images can be represented using bits and numbers. What letter of the alphabet would be represented by the following set of numbers representing its RLE compression? You can use the interactive pixel grid above or in another tab to work this out.
 	
 	.. raw:: html
 	
@@ -326,15 +326,15 @@ Self-Check
 .. mchoice:: mcsp-3-3-2
     :random:
     :practice: T
-    :answer_a: 1, 1, 1<br>0, 3<br>0, 3<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>
+    :answer_a: <br>1, 1, 1<br>0, 3<br>0, 3<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>1, 1, 1<br>
     :feedback_a: We’re in the learning zone today. Mistakes are our friends!
-    :answer_b: 1, 3, 1<br>0, 1, 3, 1<br>0, 1, 4<br>0, 1, 4<br>0, 1, 3, 1<br>1, 3, 1
+    :answer_b: <br>1, 3, 1<br>0, 1, 3, 1<br>0, 1, 4<br>0, 1, 4<br>0, 1, 3, 1<br>1, 3, 1
     :feedback_b: 
-    :answer_c: 1, 3<br>0, 1, 3<br>0, 2, 2<br>2, 2<br>3, 1<br>0, 3, 1
+    :answer_c: <br>1, 3<br>0, 1, 3<br>0, 2, 2<br>2, 2<br>3, 1<br>0, 3, 1
     :feedback_c: We’re in the learning zone today. Mistakes are our friends!
     :correct: b
 
-    Which set of numbers would encode the letter "c"? You can use the interactive pixel grid above under Practice or in another tab to work this out. 
+    Which set of numbers would encode the letter "c"? You can use the interactive pixel grid above or in another tab to work this out. 
 
 
 .. raw:: html

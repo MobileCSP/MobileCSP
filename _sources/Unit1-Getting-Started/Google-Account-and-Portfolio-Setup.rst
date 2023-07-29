@@ -7,6 +7,8 @@ Google Account and Portfolio Setup
 
 .. raw:: html
 
+     <div class="MCSP-lesson-content">
+
      <h3 id="est-length">Time Estimate: 15-45 minutes</h3>
 
 Introduction and Goals
@@ -88,3 +90,4 @@ Learning Activities
 
 
      </p>
+     </div>

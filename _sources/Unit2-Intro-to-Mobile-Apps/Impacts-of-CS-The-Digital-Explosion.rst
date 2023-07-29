@@ -7,7 +7,7 @@ Impacts of CS The Digital Explosion
 
 .. raw:: html
 
-        <div class="MCSP-lesson-content">
+    <div class="MCSP-lesson-content">
     <script>
       $(document).ready(function() {
         generateSummary(EKmapping['2.11']);
@@ -49,7 +49,7 @@ Introduction and Goals
 .. raw:: html
 
     <p>Computing has transformed our lives in so many ways. And mobile computing, where we are constantly connected to others and to the world via our mobile devices, is challenging us right now to come with new norms about privacy, security, the ownership or openness of <span class="hover vocab yui-wk-div" data-id='data'>data</span> and information, and other issues.</p>
-    <div class="yui-wk-div">
+   
     <p>Like any technology, mobile computing has both positive and negative impacts. We need to reflect on these impacts in general and we also think about the impacts we will create as we build our own mobile apps.</p>    <table><tbody>
     <table><tbody>
       <tr>
@@ -70,8 +70,7 @@ Introduction and Goals
          </td>
       </tr>       
       </tbody></table>  
-    </div>
-    </div>
+   
     
 Learning Activities
 --------------------

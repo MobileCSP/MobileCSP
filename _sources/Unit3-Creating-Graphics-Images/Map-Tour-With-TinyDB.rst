@@ -301,7 +301,7 @@ Self-Check
     	</tbody></table>
     	<br />
     	<p>And suppose your app just executed the following block:</p>
-        <img src="../_static/assets/img/StoreBowdoin.png" width="200"/>
+        <img src="../_static/assets/img/StoreBowdoin.png" width="300px"/>
         <p>Which of these statements best describes the current state of the database?		</p>
         
 .. mchoice:: mcsp-3-9-6

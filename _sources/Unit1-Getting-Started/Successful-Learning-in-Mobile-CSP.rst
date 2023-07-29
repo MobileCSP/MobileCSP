@@ -7,6 +7,7 @@ Successful Learning in Mobile CSP
 
 .. raw:: html
 
+     <div class="MCSP-lesson-content">
      <h3 id="est-length">Time Estimate: 45 minutes</h3>
 
 Introduction and Goals
@@ -129,3 +130,4 @@ Learning Activities
        </li>
        <li>Test yourself often - make flashcards for vocabulary, build apps without watching the solutions video or reading the solutions text, go back to previous lessons and complete the interactive exercises again, etc.
      </ul>
+     </div>
