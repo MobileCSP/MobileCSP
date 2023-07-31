@@ -45,6 +45,16 @@ blockquote,
   font-size: inherit;
 }
 
+code,
+.runestone-sphinx code
+{
+  padding: 0;
+  color: var(--codeColor);
+  background-color: inherit;
+  font-weight: bold;
+  font-size: 100%;
+}
+
 td, th,
 .ptx-runestone-container td, .ptx-runestone-container th, 
 .runestone-sphinx td, .runestone-sphinx th  { 

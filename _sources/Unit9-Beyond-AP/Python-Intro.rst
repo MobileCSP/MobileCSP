@@ -136,7 +136,7 @@ Let's make a poem or a story using input and variables. Ask the user to input di
     # Get user input
     pluralnoun1 = input("Enter a plural noun: ")
     pluralnoun2 = input("Enter another plural noun: ")
-    # Complete the input commands below 
+    # Complete 3 input statements below 
     color1 = input(            )
     color2 = 
     food = 
@@ -228,10 +228,10 @@ Let's create an adventure game with nested if-else statements.
 
     print("End of Game. Click on Run to try the adventure again.")
 
-Python Turtles
----------------
+Python Turtles and Functions
+-----------------------------
 
-Python has a ``Turtle`` library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following commands:
+Python has a ``Turtle`` library where turtle objects can move around on the screen and draw pictures. We can import the library and set up the drawing space and the turtle with the following code:
 
 .. code-block:: python
 
@@ -239,7 +239,7 @@ Python has a ``Turtle`` library where turtle objects can move around on the scre
    space = Screen()            # create a turtle space
    yertle = Turtle()           # create a turtle named yertle
 
-The Turtle object ``yertle`` can be used to call functions to move the turtle around the screen. For example, the following commands will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again.
+The Turtle object ``yertle`` can be used to call **functions** to move the turtle around the screen. For example, the following code will move the turtle forward 100 pixels, turn it left 90 degrees, and move it forward 100 pixels again. The amount of movement or turning is put in parentheses after the function name. These are called **arguments** in the function call. 
 
 .. code-block:: python
 

@@ -176,7 +176,7 @@ Try the following Color Chooser by moving the sliders to see the RGB values for 
     <iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://www.cssscript.com/demo/rgb-color-picker-slider/"></iframe>
 
 
-The following code will create a picture from a file and then loop through all the pixels in the picture. It will then change the color of any pixel that is close to white to cyan.
+The following code will create a picture from a file and then loop through all the pixels in the picture. It will then change the color of any pixel that is close to white to cyan. This code and project are based on the *Picture Lab* by Dr. Barbara Ericson.
 
 .. activecode:: py-picture-project
     :language: python
@@ -222,7 +222,4 @@ You can use the images below to try out your code.
 .. datafile:: puppies.jpg
    :image:
    :fromfile: ../../_static/assets/img/puppies.jpg
-
-
-
 
