@@ -2,8 +2,8 @@
 
    <div class="logo-header"  id="student-logo"  > <img class="align-center" src="../_static/Mobile_CSP_Logo_White_transparent.png" width="250px"/> </div>
 
-Artificial Intelligence and Machine Learning (REVISED 2021)
-============================================================
+Artificial Intelligence and Machine Learning 
+==============================================
 
 .. raw:: html
 
