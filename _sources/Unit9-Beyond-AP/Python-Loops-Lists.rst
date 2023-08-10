@@ -30,11 +30,21 @@ The following code will print out the numbers 1 to 10. Try it out by clicking th
 
 .. activecode:: py-for-loop
     :language: python
+    :autograde: unittest    
 
     Run the following code. Then, change the range to print out the numbers 1 to 20. CLick on the *Show CodeLens* button and then click repeatedly on the *Next* button to see the value of the variable ``i`` change as the loop runs.
     ~~~~
     for i in range(1, 11):
         print(i)
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("20",self.getOutput(),"Output from 1 to 20")
+
+    myTests().main()       
 
 .. hparsons:: py-hparsons-for-loop
     :language: python
@@ -76,6 +86,7 @@ Let's use a loop with a turtle to draw a square.
 
 .. activecode:: py-turtle-loop
     :language: python
+    :autograde: unittest
 
     Run this code to have the turtle draw a square using a loop. Can you make the turtle draw a hexagon? How many times does the loop need to run to draw each side? What should the angle be for each turn? Try different values until you get it to work.
     ~~~~
@@ -87,7 +98,17 @@ Let's use a loop with a turtle to draw a square.
     for i in range(4):
         tina.forward(100)         
         tina.right(90)
+ 
+    ====
+    from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("range(6)", self.getEditorText(), "hexagon is 6 sides")
+            self.assertIn("60", self.getEditorText(), "angles should be less than 90")
+            
+    myTests().main()    
 
 Python Lists
 ---------------
@@ -106,6 +127,7 @@ Lists in Python are numbered starting from 0. The list name can be followed by t
 
 .. activecode:: py-list-index
     :language: python
+    :autograde: unittest
 
     Run the following code. Change the index i to another number and run again.
     ~~~~
@@ -113,6 +135,15 @@ Lists in Python are numbered starting from 0. The list name can be followed by t
     print( animals[0] )
     i = 2
     print( animals[i] )
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertNotIn("2", self.getEditorText(), "change i's value")
+            
+    myTests().main()  
 
 Loops are often used to go through a list of items. In fact, the ``range`` function we used in the ``for`` loops above actually creates a list of numbers. Instead of ``range``, we can simply use the list name in a ``for`` loop to visit each item in the list. 
 
@@ -129,12 +160,23 @@ The following code will print out each item in the list on a separate line.
 
 .. activecode:: py-list-loop
     :language: python
+    :autograde: unittest
 
     Run the following code. Add more animals to the list and run it again. 
     ~~~~
     animals = ["cat", "dog", "bird", "fish"]
     for animal in animals:
         print(animal)
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            input_count = self.getEditorText().count(",")
+            self.assertGreaterEqual(input_count, 4, "at least 4 items in list")
+            
+    myTests().main()  
 
 
 .. parsonsprob:: py-parsons-list
@@ -181,6 +223,7 @@ The following code will create a picture from a file and then loop through all t
 .. activecode:: py-picture-project
     :language: python
     :datafile: kitten.jpg, puppies.jpg, student.jpg
+    :autograde: unittest
 
     Run the following code to see how it changes the white background of the image. The original image is above. Can you change the color of the student's hair which is close to black? Can you change the red t-shirt to another color? You can also experiment with the files kitten.jpg and puppies.jpg.
     ~~~~
@@ -207,7 +250,16 @@ The following code will create a picture from a file and then loop through all t
     # SHOW THE CHANGED IMAGE
     window = ImageWin(img.getWidth(),img.getHeight())
     img.draw(window)
+    ====
+    from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertNotIn("230", self.getEditorText(), "change the values and signs in the if statement")
+            self.assertNotIn("255", self.getEditorText(), "change the values in the set color statements")
+
+    myTests().main() 
 
 You can use the images below to try out your code.
 

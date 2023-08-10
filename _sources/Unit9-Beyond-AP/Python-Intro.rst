@@ -26,6 +26,17 @@ Notice that every Python command to the computer must be on a separate line.
     ~~~~
     print("Hello World!")
     print("Good bye!")
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("Hello",self.getOutput(),"Says hello")
+            self.assertNotIn("World",self.getOutput(),"Change World to your name")
+
+    myTests().main()
+
     
 .. hparsons:: py-hparsons-print1
     :language: python
@@ -49,10 +60,21 @@ Debugging
 
 .. activecode:: py-bugs1
     :language: python
+    :autograde: unittest
 
     Run the following code. Fix the errors and run again.
     ~~~~
     print("Hello World!
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("Hello World!",self.getOutput(),"output")
+           
+    myTests().main()
+
 
 Python Variables
 ----------------
@@ -69,12 +91,24 @@ Try changing the variable values in the code below and run it to see what happen
 
 .. activecode:: py-variables
     :language: python
+    :autograde: unittest
 
     Try changing "Rain" to your name and 16 to your age in the code below and run it to see what happens.
     ~~~~
     name = "Rain"
     age = 16
     print(name, "is", age, "years old.")
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("years old",self.getOutput(),"output")
+            self.assertNotIn("Rain",self.getOutput(),"Change Rain to your name")
+
+    myTests().main()
+
 
 .. hparsons:: py-hparsons-print2
     :language: python
@@ -101,11 +135,21 @@ Python has an input function that can be used to get input from the user. The fo
 
 .. activecode:: py-input
     :language: python
+    :autograde: unittest
 
     Run the following code. Enter your name in the pop up input box and then scroll down to see the output.
     ~~~~
     name = input("What is your name? ")
     print("Hello", name)
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("Hello",self.getOutput(),"output")
+          
+    myTests().main()
 
 .. hparsons:: py-hparsons-input1
     :language: python
@@ -130,6 +174,7 @@ Let's make a poem or a story using input and variables. Ask the user to input di
 
 .. activecode:: py-story
     :language: python
+    :autograde: unittest
 
     Finish the input statements below to ask the user for 2 colors and a food item. Run to see the silly poem. Then, ask the user for more input words and create your own poem or story using the variables in print statements.
     ~~~~
@@ -150,6 +195,17 @@ Let's make a poem or a story using input and variables. Ask the user to input di
     print("Do " + pluralnoun2 + " like them too?")
     # Add at least 2 more lines to the poem
     # using print and your last 2 variables
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("I like",self.getOutput(),"output")
+            input_count = self.getEditorText().count("input(")
+            self.assertGreaterEqual(input_count, 7, "at least 7 input statements")
+
+    myTests().main()
 
 If statements
 --------------
@@ -169,6 +225,7 @@ The following code will ask the user for their age and then print out a message 
 
 .. activecode:: py-if
     :language: python
+    :autograde: unittest
 
     Run the following code twice trying an age under 16 and one over 16. Try adding extra print statements under the if or else blocks. Make sure you indent and line them up!
     ~~~~
@@ -177,7 +234,15 @@ The following code will ask the user for their age and then print out a message 
         print("You are old enough to drive.")
     else:
         print("You are not old enough to drive.")
+    ====
+    from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertIn("old enough",self.getOutput(),"output")
+          
+    myTests().main()
 
 .. parsonsprob:: py-parsons-if
    :numbered: left
@@ -208,6 +273,7 @@ Let's create an adventure game with nested if-else statements.
 
 .. activecode:: py-adventure
     :language: python
+    :autograde: unittest
 
     Create an adventure game with nested if-else statements. Fill in the ...'s in the print statements and add more if statements for different choices in the adventure.
     ~~~~
@@ -227,6 +293,17 @@ Let's create an adventure game with nested if-else statements.
         
 
     print("End of Game. Click on Run to try the adventure again.")
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            self.assertNotIn("...",self.getEditorText(),"Replace ... with your own adventure text")
+            input_count = self.getEditorText().count("if")
+            self.assertGreaterEqual(input_count, 5, "at least 5 if statements")
+
+    myTests().main()
 
 Python Turtles and Functions
 -----------------------------
@@ -251,6 +328,7 @@ Try running the following code to see what happens. Then, try to make the turtle
 
 .. activecode:: py-turtle1
     :language: python
+    :autograde: unittest
 
     Run the following code. Can you make the turtle complete the square?
     ~~~~
@@ -260,7 +338,19 @@ Try running the following code to see what happens. Then, try to make the turtle
     tina.shape("turtle") 
     tina.forward(100)         
     tina.right(90)          
-    tina.forward(100)       
+    tina.forward(100)   
+    ====
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            input_count = self.getEditorText().count("forward")
+            self.assertGreaterEqual(input_count, 4, "at least 4 forward statements")
+            input_count = self.getEditorText().count("right")
+            self.assertGreaterEqual(input_count, 4, "at least 4 right turns")
+
+    myTests().main()    
 
 
 Turtle Project
@@ -268,6 +358,7 @@ Turtle Project
 
 .. activecode:: py-turtle-project
     :language: python
+    :autograde: unittest
 
     Change the code below to draw something with the turtle. The code below also shows how to change colors, fill in colors, lift up the pen, and draw dots. You could draw a flower, a house for the turtle, a smiley face, or anything you want.
     ~~~~
@@ -293,4 +384,13 @@ Turtle Project
     tina.pendown()          # put pen down so it draws
 
     tina.dot(20, "red")   # draw a red dot of size 20
+    ====
+    from unittest.gui import TestCaseGui
 
+    class myTests(TestCaseGui):
+
+        def test1(self):
+            input_count = self.getEditorText().count("forward")
+            self.assertGreaterEqual(input_count, 8, "at least 8 forward statements")
+
+    myTests().main()   
