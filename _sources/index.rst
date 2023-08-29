@@ -14,14 +14,13 @@ Mobile CSP
 	<p>Mobile Computer Science Principles (<a target="_blank" href="http://mobile-csp.org">Mobile CSP</a>) is an NSF-funded effort to provide a broad and rigorous introduction to computer science based on MIT App Inventor, a programming language for creating apps for mobile devices.  Mobile CSP is a program of the <a href="http://www.css.edu/csed" target="_blank">National Center for Computer Science Education</a>. Mobile CSP is an approved curriculum provider for the College Board's  Advanced Placement (AP) Computer Science Principles curriculum framework for introductory computer science.</p>
 	
 	<p>In Mobile CSP you will learn computer science by building socially useful mobile apps.  In addition to programming and computer science principles, Mobile CSP is project-based and emphasizes writing, communication, collaboration, and creativity. </p>
-	
-	<!-- <p><span style="background-color: yellow; font-weight: bold">UPDATE:</span> Mobile CSP is excited to be on Runestone Academy starting in August 2021! Read more about the transition at <a href="https://www.mobile-csp.org/migration" target="_blank">mobile-csp.org/migration</a>.</p>
-	
-	<p>ATTN: high school women, genderqueer, and non-binary technologists: Apply now for the NCWIT Award for Aspirations in Computing to be recognized for all that you do (or want to do) in technology. Visit <a href="http://www.aspirations.org/AiCHSAward" target="_blank">www.aspirations.org/AiCHSAward</a> for details. #NCWITAiC22 </p>
 
-	<p>ATTN high school women of color taking AP CSA or CSP: Apply for Sisters Rise Up, a free online mentorship program for women of color (Black, Latina, and/or Native American) who are taking an AP CSA or CSP course during the 2021-2022 school year.  This program is part of a research project, Sisters Rise Up, which studies ways to help women of color succeed in AP CS.  It offers free remote help sessions led by undergraduate students from the University of Michigan. Two one-hour remote help sessions are offered most weeks and a two-three hour remote help session is offered once a month.  If you take the AP CS exam and send in your score by the end of August you will receive a $100 gift card.  
-	If you are interested, please fill out contact information for a parent or guardian at <a href="https://forms.gle/4LfH8r28tw67iZd78" target="_blank">https://forms.gle/4LfH8r28tw67iZd78</a>.  </p>
-    -->
+	<p>
+	ATTENTION high school women of color taking AP CSP or CSA: if you identify as female and as Black, Hispanic/Latina, and/or Native American, apply to participate in **Sisters Rise Up**. The goal of Sisters Rise Up is to help you succeed in your AP Computer Science course and on the exam. They offer one-hour help sessions several times a week and once a month special help sessions often with guest speakers from computing.  If you enroll in Sisters Rise Up and send in your AP CS exam score by the end of August, you will be sent a gift card for $100. See the <a href="https://drive.google.com/file/d/11MDPfpb3sjzfCR-6zeUe79WNgBbfZbqN/view?usp=sharing" target="_blank">flyer</a>  and apply at  <a href="https://tinyurl.com/55z7tyb9" target="_blank">https://tinyurl.com/55z7tyb9</a>. </p>
+
+    <p>ATTENTION high school women, genderqueer, and non-binary technologists: Apply Sept. 1st until Oct. 20th for the **NCWIT Award for Aspirations in Computing** to be recognized for all that you do (or want to do) in technology. Visit <a href="http://www.aspirations.org/AiCHSAward" target="_blank">http://www.aspirations.org/AiCHSAward</a> for details.  </p>
+	
+    
 	
 	<p><img align="left" src="https://www.nsf.gov/pubs/1998/nsf98142/nsf4c.jpg" width="32"> The material on this site is based upon work supported by the National Science Foundation under Grant Nos. CNS-1240841, CNS-1440947, CNS-1637601, CNS-1836990, CNS-1836983, CNS-1837112, and CNS-1837723. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</p>
 	
