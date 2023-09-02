@@ -30,21 +30,21 @@ Learning Activities
 
 .. raw:: html
 
-     <p>App Inventor is an example of an <a target="_blank" href="https://en.wikipedia.org/wiki/Integrated_development_environment">Integrated Development Environment (IDE)</a>, which means that all of the software tools needed to design, develop, and test a mobile Android app are integrated within the App Inventor platform.  IDEs are part of the standard toolkit that programmers use to develop programs.</p>
+     <p>App Inventor is an example of an <a target="_blank" href="https://en.wikipedia.org/wiki/Integrated_development_environment">Integrated Development Environment (IDE)</a>, which means that all of the software tools needed to design, develop, and test a mobile app are integrated within the App Inventor platform.  IDEs are part of the standard toolkit that programmers use to develop programs.</p>
 
      <p>App Inventor is a <a href="http://en.wikipedia.org/wiki/Cloud_computing" target="_blank">cloud application</a>. It runs completely within a browser. Chrome, Firefox and Safari are the recommended browsers. <b>App Inventor is not supported on Internet Explorer!</b> Make sure your computer has the latest version of your preferred browser. </p>
 
      <p>The Setup instructions describe four options for developing apps with App Inventor.  The following links will bring you to App Inventor's site for the setup instructions. We recommend that you set yourself up with at least a couple options. </p>
 
      <ul>
-     <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-wifi.html">Wifi: Connecting an Android mobile device (tablet or smart phone) via a Wifi link.</a></li>
-     <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-usb.html">USB: Connecting an Android mobile device via a USB cable.</a></li>
+     <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-wifi.html">Wifi: Connecting an Android or iOS (iPhone, iPad, iPod) mobile device (tablet or smart phone) via a Wifi link.</a></li>
+     <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-usb.html">USB: Connecting a mobile device via a USB cable.</a></li>
      <li><a href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html">Android emulator: Using emulator software running on your computer to test your apps.</a></li>
      <li><a href="http://ai2.appinventor.mit.edu/reference/other/genymotion.html">Genymotion Emulator </a></li>
      <li><a href="https://docs.google.com/document/d/1XBRVe9Rb8bIauJohaf-Bb-GJ-D9hVHOjoongpMu_vyA/edit" target="_blank" title="">Other emulators</a></li>
      </ul>
 
-     <p>This course is best experienced with an Android mobile device, either a tablet or smartphone. Soon, App Inventor will work on iOS devices too! Most lessons will work with the emulator too. If you are using a Chromebook, install the MIT AI2 Companion App from the play store and use Connect/Companion from App Inventor to connect to it in a different window by typing in the 6 character code. For best results on the Chromebook companion, change the Screen property <b>Sizing</b> to <b>responsive</b> instead of fixed in App Inventor before connecting. </p>
+     <p>This course is best experienced with an Android or iOS mobile device, either a tablet or smartphone. App Inventor now works on iPhones too! Most lessons will work with the emulator too. If you are using a Chromebook, install the MIT AI2 Companion App from the play store and use Connect/Companion from App Inventor to connect to it in a different window by typing in the 6 character code. For best results on the Chromebook companion, change the Screen property <b>Sizing</b> to <b>responsive</b> instead of fixed in App Inventor before connecting. </p>
 
 
      <p>Follow the directions in the Welcome App below to complete your setup. </p>
@@ -80,7 +80,7 @@ Learning Activities
 
      <ol>
      <li>Make sure that both your computer and your phone or tablet are connected to the same wifi.</li>
-     <li>Install the <a target="_blank" href="https://play.google.com/store/apps/details?id=edu.mit.appinventor.aicompanion3">MIT AI2 Companion app</a> from the Play Store (or  <a href="http://appinv.us/companion" target="_blank">here</a> if you can't use the Play Store) on your Android mobile device and start it.</li>
+     <li>Install the <a target="_blank" href="https://play.google.com/store/apps/details?id=edu.mit.appinventor.aicompanion3">Android MIT AI2 Companion app</a> or <a target="_blank" href="https://apps.apple.com/us/app/mit-app-inventor/id1422709355?uo=4&itscg=30200&itsct=apps_box&mt=8">iOS MIT App Inventor Companion</a> from the Play Store (or for Android <a href="http://appinv.us/companion" target="_blank">here</a> if you can't use the Play Store) on your mobile device and start it.</li>
      <li>In App Inventor on your computer, click Connect and then select <i>AI Companion</i>. This will display a 6-letter code both as a barcode and as plain text. (Note: The 6-letter code will be a unique code and different from the one shown below)<p><img src="../_static/assets/img/testappselect.png">
      <p><img src="../_static/assets/img/testappcompanion.png"></p></li>
      <li>On the companion app, either type in the 6-letter code and click the “Connect to App Inventor” button or scan the barcode. You should see the app on your device!</li>
