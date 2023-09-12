@@ -43,7 +43,7 @@ Notice that every Python command to the computer must be on a separate line.
     :randomize:
     :blockanswer: 0 1 2 3
 
-    Put the blocks in order to create a print statement. There are extra blocks that you don't need.
+    Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement. There are extra blocks that you don't need.
     ~~~~
     --blocks--
     print
@@ -113,9 +113,9 @@ Try changing the variable values in the code below and run it to see what happen
 .. hparsons:: py-hparsons-print2
     :language: python
     :randomize:
-    :blockanswer: 0 1 2 3 4 5 6 7 
+    :blockanswer: 0 1 2 3 4 5 6 
 
-    Put the blocks in order to create a print statement with a variable ``name``. For example, if ``name = "Alex"``, it will print "Hello Alex!". There are extra blocks that you don't need.
+    Drag or click on the blocks you need to move them from the top section into the yellow area to create a print statement with the variable ``name``. For example, if ``name = "Alex"``, it will print "Hello Alex!". There are extra blocks that you don't need.
     ~~~~
     --blocks--
     print
@@ -156,7 +156,7 @@ Python has an input function that can be used to get input from the user. The fo
     :randomize:
     :blockanswer: 0 1 2 3 4 5 
 
-    Put the blocks in order to create an input statement. 
+    Drag or click on the blocks you need to move them from the top section into the yellow area to create a input statement. 
     ~~~~
     --blocks--
     age 
