@@ -8,8 +8,8 @@ ASSESSMENT: AP Create 2
 .. raw:: html
 
 	
-	
-	<h3 id="est-length">Time Estimate: 12 hours (16 45 minute classes) minimum</h3>
+	<div class="MCSP-lesson-content">
+	<h3 id="est-length">Time Estimate: 9 hours (12 45 minute classes) minimum as of Fall 2023</h3>
 	<p>Follow these directions if you are taking CSP as an AP course. If you are in a non-AP CSP course, please go to the next lesson for Non-AP Create directions.</p>
 
 Introduction and Goals
@@ -33,7 +33,9 @@ Learning Activities
 
 	<h3>Warm Up Activity: Create Grading Rubric</h3>
 	<p>
-	Use the <a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> to grade the two <a href="https://course.mobilecsp.org/mobilecsp/unit?unit=127&amp;lesson=203" target="_blank">Create Performance Task Samples in lesson 8.9</a> to familiarize yourself with the rubric and Create write-ups.</p>
+	Use the <a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> to grade the two <a href="https://runestone.academy/ns/books/published/mobilecsp/Unit7-Using-Analyzing-Data/Create-PT-Samples.html" target="_blank">Create Performance Task Samples</a> to familiarize yourself with the rubric and Create write-ups.</p>
+
+	<p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete Create written response even though you do not need to submit it to the AP site.</p>
 	
 	<h3>Iterative Design Thinking Process</h3>
 
@@ -120,4 +122,4 @@ Resources
 	  </li><li><a href="https://globalmeet.webcasts.com/starthere.jsp?ei=1430682&amp;tp_key=ef695443c0" target="_blank" title="">College Board Student Create Performance Task Webinar March 2021 - Recording</a></li>
 	  <li><a href="https://docs.google.com/drawings/d/1M-DZITeDT9aiPZ7Oz-kXKEGkn0DiFOH1i8idBNlxwCA/copy" target="_blank">Paper Prototype Template</a></li>
 	  </ul>
-	     
+	  </div>   

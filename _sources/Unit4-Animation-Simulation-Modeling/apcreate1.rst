@@ -16,7 +16,7 @@ Introduction and Goals
 
 	<p>In this Create Project #1, you will work with a partner to design a socially useful interactive app, that  demonstrates algorithms such as selection and procedural abstractions. As you develop your project keep track of significant errors and bugs that you encountered and how you solved or debugged them in a journal.</p>
 
-     <p>Before beginning, please review the following:</p><ul><li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions</a></li><li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines</a></li></ul><ul>
+     <p>Before beginning, please review the following:</p><ul><li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions as of Fall 2023</a></li><li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines as of Fall 2023</a></li></ul><ul>
      </ul>
      <p>
            In the official Create: Programming Performance Task #2 you will need to address <b>ALL</b> of the requirements and prompts as outlined in the performance task directions (i.e. a list, procedure with parameter, and algorithm with sequence, selection, and iteration). However, this is a <b>PRACTICE</b> programming performance task therefore not all aspects are required to be completed. You are not expected to include a procedure with a parameter for this practice task, but you should at least include a procedure. It is recommended that you try to include a loop.</p>
@@ -218,6 +218,9 @@ Learning Activities
 
      <p>Create a <a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank" title="">video demonstration</a> of your app and answer the prompts outlined in the <a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Create Performance Task template</a>. Submit your video and answers to the prompts on your portfolio as a <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">portfolio write-up</a>.</p>
 
+    <p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete Create written response even though you do not need to submit it to the AP site.</p>
+
+    
 Resources
 -------------
 
