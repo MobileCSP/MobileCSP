@@ -173,8 +173,8 @@ The following code will print out each item in the list on a separate line.
     class myTests(TestCaseGui):
 
         def test1(self):
-            input_count = self.getEditorText().count(",")
-            self.assertGreaterEqual(input_count, 4, "at least 4 items in list")
+            input_count = self.getEditorText().count(",") + 1
+            self.assertGreaterEqual(input_count, 5, "at least 5 items in list")
             
     myTests().main()  
 
