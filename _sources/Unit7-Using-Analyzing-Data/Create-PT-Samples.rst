@@ -7,6 +7,7 @@ Create PT Prep and Samples
 
 .. raw:: html
 
+	<div class="MCSP-lesson-content">
 	<!--<style>
 	tr, td {
 		border: 1px solid black;
@@ -1793,5 +1794,6 @@ Sample 6 - 2017's Sample A
 	</div>
 	     
 	</div> <!-- accordion 6 -->
+	</div>
 	
 

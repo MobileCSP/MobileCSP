@@ -7,6 +7,7 @@ Create PT Written Response Practice
 
 .. raw:: html
 
+    <div class="MCSP-lesson-content">
 	<script>
 	  $(document).ready(function() {
 	    generateSummary(EKmapping['8.11']);
@@ -185,3 +186,4 @@ Reflection: For Your Portfolio
     <div style="align-items:center;"><iframe class="portfolioQuestions" scrolling="yes" src="https://docs.google.com/document/d/1pgZntXjhm-IO9iHmNA1lMJE7MBDv-sAJOuSaX9LIFsk/pub?embedded=true" style="height:30em;width:100%"></iframe></div>
     </div>
     </img></div>
+    </div>
