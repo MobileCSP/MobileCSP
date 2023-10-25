@@ -24,7 +24,12 @@ Introduction and Goals
 	  </p><ul>
 	    <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions </a> </li>
 	    <li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
+		<li><a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment" target="_blank" title="">Student Assessment Page for AP CSP</a> </li>
+		<li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a> </li>
 	</ul>
+
+	<p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete Create written response even though you do not need to submit it to the AP site.</p>
+
 	
 Learning Activities
 --------------------
@@ -34,8 +39,6 @@ Learning Activities
 	<h3>Warm Up Activity: Create Grading Rubric</h3>
 	<p>
 	Use the <a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> to grade the two <a href="https://runestone.academy/ns/books/published/mobilecsp/Unit7-Using-Analyzing-Data/Create-PT-Samples.html" target="_blank">Create Performance Task Samples</a> to familiarize yourself with the rubric and Create write-ups.</p>
-
-	<p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete Create written response even though you do not need to submit it to the AP site.</p>
 	
 	<h3>Iterative Design Thinking Process</h3>
 
@@ -110,16 +113,16 @@ Resources
 	<p></p>
 	<ul>
 	
-	      <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank" title="">Create Performance Task Description and Instructions </a> </li>
+	    <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank" title="">Create Performance Task Description and Instructions </a> </li>
 	    <li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines </a> </li>
-	<li>  <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">How To: Create a Portfolio Write-Up</a></li>
+		<li><a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment" target="_blank">AP CSP Exam information page</a></li>
+        <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a> </li>
+		<li><a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">How To: Create a Portfolio Write-Up</a></li>
 	    <li><a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">AP Create template and checklists</a> </li>
-	    <li> <a href="https://sites.google.com/site/mobilecspportfoliohelp/performance-tasks/create-1" target="_blank">Portfolio help site</a></li>
-	    <li><a href="https://apcentral.collegeboard.org/courses/ap-computer-science-principles/exam?course=ap-computer-science-principles" target="_blank">AP CSP Exam information page</a> with sample graded Create projects.</li>
-	  <li><a href="https://docs.google.com/a/css.edu/document/d/14noR7S7w-ghgnV2cmKXuO4KbYt3RL3vPVJLnvoWr3bk/" target="_blank">How To: Share Your App</a>
+		<li><a href="https://sites.google.com/site/mobilecspportfoliohelp/performance-tasks" target="_blank">Portfolio help site</a></li>
+	  	<li><a href="https://docs.google.com/a/css.edu/document/d/14noR7S7w-ghgnV2cmKXuO4KbYt3RL3vPVJLnvoWr3bk/" target="_blank">How To: Share Your App</a>
 	  </li><li><a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank" title="">How To: Create an App Video</a>
 	   </li><li><a href="https://docs.google.com/document/d/1e7Rsk3KTjBAB9O1wSFm5Nh3QREnV15hdeMJ2BzLU4K8/copy" target="_blank">Mobile CSP: App Feedback Template</a>
-	  </li><li><a href="https://globalmeet.webcasts.com/starthere.jsp?ei=1430682&amp;tp_key=ef695443c0" target="_blank" title="">College Board Student Create Performance Task Webinar March 2021 - Recording</a></li>
 	  <li><a href="https://docs.google.com/drawings/d/1M-DZITeDT9aiPZ7Oz-kXKEGkn0DiFOH1i8idBNlxwCA/copy" target="_blank">Paper Prototype Template</a></li>
 	  </ul>
 	  </div>   
