@@ -32,7 +32,7 @@ App Inventor Drills
     <p>
     <p>Test and improve your coding knowledge and skills with some additional exercises.  For this unit there are two sets of Drills.
     </p><ul>
-    <li><a href="https://docs.google.com/document/d/1F3evbUsj7hSmi8xEDQbHKAWKRyIH7Q9RxEvVCiZE-VA" target="_blank">Lists and Loops</a> -- coding drills that focus on using <i>for each item</i> and <i>for each number</i> loops to perform various operations on lists.<br/></li>
+    <li><a href="https://docs.google.com/document/d/1y2n3aaFfc-8uOMCeA-Wjj2lSvexRinQQq-vdHjqmO7I/" target="_blank">Lists and Loops</a> -- coding drills that focus on using <i>for each item</i> and <i>for each number</i> loops to perform various operations on lists.<br/></li>
     
 
 Vocabulary Review
