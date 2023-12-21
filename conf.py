@@ -28,7 +28,7 @@ from runestone import runestone_static_dirs, runestone_extensions, setup
 import pkg_resources
 
 # new for title page
-course_description = "Mobile Computer Science Principles (Mobile CSP) is an NSF-funded effort to provide a broad and rigorous introduction to computer science based on MIT App Inventor, a programming language for creating apps for mobile devices. Mobile CSP is a program of the National Center for Computer Science Education. Mobile CSP is an approved curriculum provider for the College Board's  Advanced Placement (AP) Computer Science Principles curriculum framework for introductory computer science"
+course_description = "Mobile Computer Science Principles (Mobile CSP) is an NSF-funded effort to provide a broad and rigorous introduction to computer science based on MIT's App Inventor, a programming language for creating apps for mobile devices. Mobile CSP is a program of the Northern Lights Collaborative for Computing Education. Mobile CSP is an approved curriculum provider for the College Board's Advanced Placement (AP) Computer Science Principles curriculum framework for introductory computer science"
 key_words = "AP CSP App Inventor"
 shelf_section = "AP Computer Science"
 
