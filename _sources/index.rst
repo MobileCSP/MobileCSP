@@ -11,7 +11,7 @@ Mobile CSP
 	<!-- <img align="left" src="../_static/assets/img/MobileCSPnewLogoSmall.png" style="padding-right:5px"> -->
 	<p>Welcome to Mobile CS Principles!</p>
 	
-	<p>Mobile Computer Science Principles (<a target="_blank" href="http://mobile-csp.org">Mobile CSP</a>) is an NSF-funded effort to provide a broad and rigorous introduction to computer science based on MIT App Inventor, a programming language for creating apps for mobile devices.  Mobile CSP is a program of the <a href="http://www.css.edu/csed" target="_blank">National Center for Computer Science Education</a>. Mobile CSP is an approved curriculum provider for the College Board's  Advanced Placement (AP) Computer Science Principles curriculum framework for introductory computer science.</p>
+	<p>Mobile Computer Science Principles (<a target="_blank" href="http://mobile-csp.org">Mobile CSP</a>) is an NSF-funded effort to provide a broad and rigorous introduction to computer science based on MIT App Inventor, a programming language for creating apps for mobile devices.  Mobile CSP is a program of the <a href="https://northern-lights.umn.edu/" target="_blank">Northern Lights Collaborative for Computing Education</a>. Mobile CSP is an approved curriculum provider for the College Board's  Advanced Placement (AP) Computer Science Principles curriculum framework for introductory computer science.</p>
 	
 	<p>In Mobile CSP you will learn computer science by building socially useful mobile apps.  In addition to programming and computer science principles, Mobile CSP is project-based and emphasizes writing, communication, collaboration, and creativity. </p>
 
