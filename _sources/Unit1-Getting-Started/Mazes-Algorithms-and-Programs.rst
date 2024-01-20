@@ -47,7 +47,7 @@ Introduction and Goals
       20 problems? 
     
 	</p><h4>Click on the maze to get started!</h4>
-    <a href="http://learn.code.org/hoc/1" target="_blank"><img src="../_static/assets/img/codeorgmaze.png"/></a>
+    <a href="https://studio.code.org/hoc/1" target="_blank"><img src="../_static/assets/img/codeorgmaze.png"/></a>
 
 Learning Activities
 -----------------------
