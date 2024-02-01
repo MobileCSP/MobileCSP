@@ -85,7 +85,7 @@ Learning Activities
       Complete the programming exercises described below and in the preview video.  Then, design your own sound board project below.
       
      </p><ol>
-    <li>Give the app its own custom icon that will appear in the device's app launcher when the app is packaged (built). (Hint: Look in the <i>Screen</i>'s properties);</li>
+    <li>Give the app its own custom icon that will appear in the device's app launcher when the app is packaged (built). (Hint: Click on the <b>Project Properties</b> button at the top for the Icon property);</li>
     <li>Use MIT App Inventor's <a href="http://ai2.appinventor.mit.edu/reference/components/media.html#TextToSpeech" target="_blank">
          Text-to-Speech</a> component (Media drawer) to get the app to speak some words
          instead of playing a speech when the Malcolm X button is pressed.
