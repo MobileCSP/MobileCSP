@@ -87,9 +87,9 @@ Learning Activities
     <img src="../_static/assets/img/IfElseAnimated.gif" style="width:60%"/>
     <br/>
     </p><h3>Tutorial</h3>
-    <p><img src="../_static/assets/img/changeEmbeddedTutorial.gif" style="width:180px;float:right;"/>
+    <p>
       To get started, <a href="http://ai2.appinventor.mit.edu" target="_blank">open MIT App Inventor</a>
-     in a separate tab and log in and open your own project from the previous I Have a Dream lesson. Follow along with your teacher or the following video tutorial or the <a href="https://drive.google.com/open?id=142GsbdyLdww30yb5WLqA-Nmej53povgD4eCStG69ESg" target="_blank" title="">text tutorial</a> or the <a href="https://docs.google.com/document/d/1-mEg1OTpFWDq2UF86NWNwNozlU-roQYCxzovpcT88jU/edit?usp=sharing" target="_blank" title="">short handout</a>. You could also use <a href="https://www.youtube.com/watch?v=vgkahOzFH2Q" target="_blank">Pair Programming</a> to do this tutorial in teams of two. If you'd like to use an embedded tutorial for this MIT App Inventor project, click on the <b>Project Properties</b> button at the top and scroll down to find the <b>TutorialURL</b> property and paste in http://templates.appinventor.mit.edu/trincoll/csp/tutorials/IHaveADreamPart2.html or change IHaveADream.html to IHaveADream<b>Part2</b>.html. </p>
+     in a separate tab and log in and open your own project from the previous I Have a Dream lesson. Follow along with your teacher or the following video tutorial or the <a href="https://drive.google.com/open?id=142GsbdyLdww30yb5WLqA-Nmej53povgD4eCStG69ESg" target="_blank" title="">text tutorial</a> or the <a href="https://docs.google.com/document/d/1-mEg1OTpFWDq2UF86NWNwNozlU-roQYCxzovpcT88jU/edit?usp=sharing" target="_blank" title="">short handout</a>. You could also use <a href="https://www.youtube.com/watch?v=vgkahOzFH2Q" target="_blank">Pair Programming</a> to do this tutorial in teams of two. </p><p>If you'd like to use an embedded tutorial for this MIT App Inventor project, click on the <b>Project Properties</b> button at the top and scroll down to find the <b>TutorialURL</b> property and paste in http://templates.appinventor.mit.edu/trincoll/csp/tutorials/IHaveADreamPart2.html or change IHaveADream.html to IHaveADream<b>Part2</b>.html. </p>
     <br/>
 .. youtube:: Qs8NJbCoD9c
         :width: 650
