@@ -34,7 +34,7 @@ App Inventor Drills
     </p><ul>
     <li><a href="https://docs.google.com/document/d/1EWdF1vR-mufd029LyEFrJ6wVk2Fd0Skj2j2ktZl65CI" target="_blank">Databases, TinyDB and TinyWebDb</a> -- exercises that use App Inventor's built-in database to persist and share data.   
       </li>
-    <li><a href="https://docs.google.com/document/d/1-aTVQ-Y04xbtZAncDQoej6hNWtzLXO2Ji42x1mtG5j8" target="_blank">Databases, Firebase</a> -- the same exercises as in the previous set but these use App Inventor's experimental Firebase component to persist and share data.  
+    <li><a href="https://docs.google.com/document/d/1a1ji8eMxcpCd3J_mDC1bBSyCnLkbMkCrF8UL7H5nHHE/edit" target="_blank">Databases, Firebase</a> -- the same exercises as in the previous set but these use App Inventor's experimental Firebase component to persist and share data.  
       </li>
     </ul>
     

@@ -29,10 +29,12 @@ App Inventor Drills
 
 .. raw:: html
 
+    <p>Test and improve your coding knowledge and skills with some additional exercises.  For this unit there are two Drills.</p>
+    <ul>
+    <li><a href="https://docs.google.com/document/d/1y2n3aaFfc-8uOMCeA-Wjj2lSvexRinQQq-vdHjqmO7I/" target="_blank">Lists and Loops</a> -- coding drills that focus on using <i>for each item</i> and <i>for each number</i> loops to perform various operations on lists.<br/></li>
+    <li><a href="https://docs.google.com/document/d/1x_l5YFjpI22fA3gXLil1J7dqlpdv3F4yYLGmx6ehNnA/" target="_blank">Procedures and Functions</a> -- coding drills that focus on refactoring code with procedures, functions, and lists.<br/></li></ul>
     <p>
-    <p>Test and improve your coding knowledge and skills with some additional exercises.  For this unit there is one set of Drills.</p><ul><li><span style="font-weight: bold; font-style: italic;"><a href="https://docs.google.com/document/d/1F3evbUsj7hSmi8xEDQbHKAWKRyIH7Q9RxEvVCiZE-VA" style="font-style: normal; font-weight: 400;" target="_blank">Lists and Loops</a><span style="font-style: normal; font-weight: 400;"> </span><span style="font-style: normal; font-weight: 400;">-- coding drills that focus on using</span><span style="font-style: normal; font-weight: 400;"> </span><i style="font-weight: 400;">for each item</i><span style="font-style: normal; font-weight: 400;"> </span><span style="font-style: normal; font-weight: 400;">and</span><span style="font-style: normal; font-weight: 400;"> </span><i style="font-weight: 400;">for each number</i><span style="font-style: normal; font-weight: 400;"> </span><span style="font-style: normal; font-weight: 400;">loops to perform various operations on lists.</span><br/></span></li>
-    </ul>
-    <p>
+  
     </p>
 
 Vocabulary Review

@@ -32,7 +32,8 @@ MIT App Inventor Drills
     <p>
     <p>Test and improve your coding knowledge and skills with some additional exercises.  For this unit there are three sets of Drills.
     </p><ul>
-    <li><a href="https://docs.google.com/document/d/19rsvdc0W1cCpGH6lRtW4rQEhpmNAMGU5oSz7xq9wOyQ" target="_blank">Setters, Getters, and Math</a> -- drills that use MIT App Inventor's <i>variable</i> and <i>setter</i> and <i>getter</i> blocks together with simple math operations from the <i>Math</i> drawer.</li><li><a href="https://docs.google.com/document/d/15spLbTTXW2g2j-4Jfdsmlgo8oduxvVwD-jOBsjcLfVA" target="_blank">If/Else Drills</a> -- coding drills that focus on <i>if/else</i> statements, logic, and math computations. 
+    <li><a href="https://docs.google.com/document/d/19rsvdc0W1cCpGH6lRtW4rQEhpmNAMGU5oSz7xq9wOyQ" target="_blank">Setters, Getters, and Math</a> -- drills that use MIT App Inventor's <i>variable</i> and <i>setter</i> and <i>getter</i> blocks together with simple math operations from the <i>Math</i> drawer.</li>
+    <li><a href="https://docs.google.com/document/d/1TyR0jR3ObnjF2LPNtp5KW8MHynQSsAeDBjiVCmOyUtA/edit?usp=sharing" target="_blank">If/Else Drills</a> -- coding drills that focus on <i>if/else</i> statements, logic, and math computations. 
       </li>
     <li><a href="https://docs.google.com/document/d/1x_l5YFjpI22fA3gXLil1J7dqlpdv3F4yYLGmx6ehNnA/edit" target="_blank">Code Refactoring</a> -- exercises that focus on revising and existing to incorporate <i>procedural abstraction</i> by defining <i>procedures</i> and <i>functions</i>.   
       </li>

@@ -29,12 +29,7 @@ App Inventor Drills
 
 .. raw:: html
 
-    <p>
-    <p>Test and improve your coding knowledge and skills with some additional exercises.  For this unit there is one set of Drills.
-    </p><ul>
-    <li><a href="https://docs.google.com/document/d/1Giu3Jz5CgKgvSv1zQSG4ikiyfP5dtfnxAJ2rLQydNmQ" target="_blank">String processing</a> -- coding drills that focus on processing text data using built-in functions and loops. 
-      </li>
-    </ul>
+    <p>There are no App Inventor Drills for this unit.</p>
     
 
 Vocabulary Review
