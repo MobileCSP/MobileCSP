@@ -189,7 +189,7 @@ Learning Activities
     <h3>POGIL Activity for the Classroom: Traveling Salesman Problem (15 minutes)</h3>
     <p>Using the same POGIL teams as above, let's give the <i><b>nearest neighbor heuristic</b></i>  a try on this problem.
         </p><blockquote>
-        A Trinity College student needs to visit some of the <a href="http://mobile-csp.org/?q=partners" target="_blank">Mobile CSP Schools</a>
+        A Trinity College student needs to visit some of the <a href="https://www.mobilecsp.org/about/our-schools-and-teachers" target="_blank">Mobile CSP Schools</a>
         in Hartford, Connecticut.  The following map shows the schools that need to be visited and gives the
         distances between each pair of schools.  The student needs a good route, starting and ending at Trinity College,
         that will visit all of the schools.
@@ -238,7 +238,7 @@ Still Curious?
 	<li>Check out the article <i><a href="https://www.betterbuys.com/estimating-password-cracking-times/" target="_blank">Estimating Password Cracking Times</a></i> from Better Buys.</li>
     <li>Do some online research to explore alternatives to  passwords schemes -- for example, two-factor authentication, biometrics, virtual tokens.   What are their relative advantages and disadvantages?</li>
     <li>Here's an interactive shortest <a href="http://www.math.uwaterloo.ca/tsp/college/index.html" target="_blank">TSP tour to visit the top 647 colleges in the U.S.</a>.</li>
-    <li>Here's a neat <a href="https://www-m9.ma.tum.de/games/tsp-game/index_en.html" target="_blank">TSP Game</a> that uses maps in Europe and Africa.  You can use it to test the nearest neighbor heuristic, or to try to  come up with your own heuristic for finding good routes through the cities.</li>
+    <li>Here's a neat <a href="https://algorithms.discrete.ma.tum.de/graph-games/tsp-game/index_en.html">TSP Game</a> that uses maps in Europe and Africa.  You can use it to test the nearest neighbor heuristic, or to try to  come up with your own heuristic for finding good routes through the cities.</li>
     <li>One field of computer science that makes extensive use of heuristics is <i><b>Artificial Intelligence (AI)</b></i>. You've probably heard of it. The field of AI traditionally tackles problems that humans are good at but computers are not (yet) good at -- for example, vision, speech recognition, natural language understanding, planning, driving, and so on. However, great progress is being made in these various areas -- just think for a moment about how well Siri and similar  intelligent digital assistants work today. In fact, try asking Siri "Hey Siri, how do you solve the traveling salesman problem?".   AI is a vast field. And, as for many topics, a good way to start learning more about <a href="https://en.wikipedia.org/wiki/Heuristic_(computer_science)" target="_blank">Heuristics</a> and AI would be to start with <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank">Wikipedia</a>. </li>
     </ul>
     
