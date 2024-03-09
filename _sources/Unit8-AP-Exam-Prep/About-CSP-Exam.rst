@@ -25,10 +25,10 @@ AP CS Principles Exam Prep
 	   <li>57 single-select multiple-choice</li>
 	   <li>5 single-select with reading passage about a computing innovation</li>
 	   <li>8 multiple-select multiple-choice: select 2 answers</li>
-	  
 	 </ul>
 	 <li>there is no designated programming language</li>
 	 <li>paper and pencil</li>
+	 <li>As of 2024, 2 written response questions for an additional 60 minutes on the exam using the Create Personalized Project Reference created during the Create Task.</li> 
 	</ul>
 	
 	<p>The following table shows what percentage of questions are in each of the Big Ideas in CSP:<br><br><img src="../_static/assets/img/APExamBIWeight.png" class="yui-img" title="" alt=""></p>
