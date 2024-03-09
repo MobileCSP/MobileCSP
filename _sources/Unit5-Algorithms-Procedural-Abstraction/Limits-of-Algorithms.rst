@@ -233,7 +233,7 @@ Still Curious?
 
     <p>
     <ul>
-   <li>Try the <a href="https://howsecureismypassword.net/" target="_blank">How secure is my password site.</a></li>
+   <li>Try the <a href="https://www.security.org/how-secure-is-my-password/" target="_blank">How secure is my password site.</a></li>
    <li>Check out the article <i><a href="https://www.wired.com/story/why-so-many-people-make-their-password-dragon/" target="_blank">Why So Many People Make Dragon Their Password</a></i> from Wired magazine.</li>
 	<li>Check out the article <i><a href="https://www.betterbuys.com/estimating-password-cracking-times/" target="_blank">Estimating Password Cracking Times</a></i> from Better Buys.</li>
     <li>Do some online research to explore alternatives to  passwords schemes -- for example, two-factor authentication, biometrics, virtual tokens.   What are their relative advantages and disadvantages?</li>
