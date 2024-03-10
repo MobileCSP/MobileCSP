@@ -17,6 +17,8 @@ AP CS Principles Exam Prep
 	Tracing-Exercises.rst
 	Sample-Exam-Questions.rst
 	CSP-Quiz-App.rst
+	Explore-Innovations-Passage-Questions.rst
+	Create-Written-Response-Questions.rst
 	Resources.rst
-	Explore-Samples.rst
 	exam.rst
+	

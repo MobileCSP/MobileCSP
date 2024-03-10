@@ -18,10 +18,9 @@ Introduction and Goals
 
      <p>Before beginning, please review the following:</p>
      <ul>
-      <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions as of Fall 2023</a></li>
-      <li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Create Performance Task Scoring Guidelines as of Fall 2023</a></li>
-      <li><a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment" target="_blank" title="">Student Assessment Page for AP CSP</a> </li>
-		  <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a> </li>
+      <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions for 2024</a></li>
+    
+		  <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a>. To access these videos, navigate to the Course Guide section in the left navigation pane of the AP Classroom homepage, select the Overview page, and then click on the Student Resources header to expand the list of available resources.  </li>
       </ul>
       <ul>
      </ul>
@@ -225,7 +224,7 @@ Learning Activities
 
      <p>Create a <a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank" title="">video demonstration</a> of your app and answer the prompts outlined in the <a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Create Performance Task template</a>. Submit your video and answers to the prompts on your portfolio as a <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">portfolio write-up</a>.</p>
 
-    <p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete Create written response even though you do not need to submit it to the AP site.</p>
+    <p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete the old Create written response even though you do not need to submit it to the AP site.</p>
 
     
 Resources
