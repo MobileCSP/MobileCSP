@@ -2,8 +2,8 @@
 
    <div class="logo-header"  id="student-logo"  > <img class="align-center" src="../_static/Mobile_CSP_Logo_White_transparent.png" width="250px"/> </div>
 
-AP CS Principles Exam Prep 
-==========================
+About the AP CS Principles Exam  
+================================
 
 .. raw:: html
 
@@ -19,16 +19,14 @@ AP CS Principles Exam Prep
 	<p>The AP Computer Science Principles exam questions assess both the application of the computational thinking practices and an understanding of the big ideas. Exam questions may assess achievement of multiple learning objectives. They may also address content from more than one essential knowledge statement. Exam questions may be accompanied by non-textual stimulus material such as diagrams, charts, or other graphical illustrations. </p>
 	<h3>The AP Computer Science Principles Exam:</h3>
 	<p><ul>
-	 <li><b>120 minutes (2 hours)</b> long</li>
-	 <li><b>70 multiple-choice</b> questions</li>
+	 <li><b>70 multiple-choice</b> questions (<b>120 minutes (2 hours)</b> long, 70% of your grade):</li>
 	 <ul>
 	   <li>57 single-select multiple-choice</li>
 	   <li>5 single-select with reading passage about a computing innovation</li>
 	   <li>8 multiple-select multiple-choice: select 2 answers</li>
+
 	 </ul>
-	 <li>there is no designated programming language</li>
-	 <li>paper and pencil</li>
-	 <li>As of 2024, 2 written response questions for an additional 60 minutes on the exam using the Create Personalized Project Reference created during the Create Task.</li> 
+	 <li>As of 2024, there are 4 written response question prompts for an additional 60 minutes on the exam using the Create Personalized Project Reference created during the Create Task. Along with your Create video and Program Code (10%), this portion is worth 30% of the exam.</li> 
 	</ul>
 	
 	<p>The following table shows what percentage of questions are in each of the Big Ideas in CSP:<br><br><img src="../_static/assets/img/APExamBIWeight.png" class="yui-img" title="" alt=""></p>
@@ -77,6 +75,5 @@ Summary
 
 .. raw:: html
 
-	<p>In this lesson, you learned how to:</p>
-	<div id="summarylist" class="yui-wk-div">
-	</div>
+	<p>In this lesson, you learned about the distribution of questions in the AP CSP Exam.</p>
+	

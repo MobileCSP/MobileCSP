@@ -70,7 +70,7 @@ Learning Activities
 	<ol><li>Review the Create Performance Task submission instructions in the <a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf" target="_blank" title="AP CSP Student Create PT Directions">AP CSP Student Directions</a>.</li>
 	<li>Make a copy of the <a href="https://docs.google.com/document/d/10cdrgYtXk40P_PAMevZEQX_0bxqCnP-QdCeBWI0z28Q/copy" target="_blank" title="submission document">submission document</a> and complete the write up activity. </li></ol><p></p>
 	
-	<p>On the end-of-course AP CSP exam, you will respond to 4 prompts related to the code in your Personalized Project Reference. You will have access to your Personalized Project Reference while responding to these prompts. Students should be prepared to respond to prompts about their program that assess any of the following learning objectives. </p>
+	<p>On the end-of-course AP CSP exam, you will respond to 4 prompts related to the code in your Personalized Project Reference. You will have access to your Personalized Project Reference while responding to these prompts. Students should be prepared to respond to prompts about their program that assess any of the following learning objectives. There are also some written response practice questions in Unit 8 and in the AP Classroom.</p>
 
 	<ul>
 	<li><b>Written Response 1: Program Design, Function, and Purpose</b>  
