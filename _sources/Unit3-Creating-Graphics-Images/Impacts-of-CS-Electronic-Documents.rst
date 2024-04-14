@@ -95,7 +95,7 @@ Learning Activities
 	<li style="display: inline"> | </li>
 	<li style="display: inline"><a href="https://docs.google.com/document/d/1g98QUiTnStaLyXbrNaStmqhGH1Wf1W3EQSd7G_sIi4s/copy" target="_blank" title=""> Conversation Questions Template</a></li>
 	<li style="display: inline"> | </li>
-	<li style="display: inline"><a href="https://docs.google.com/document/d/1rPoj6-I7hCtRfK1SDgA5y628pTaPACKQvlQcYUV7fS8//copy" target="_blank" title=""> Now That's Surprising! Template</a></li>
+	<li style="display: inline"><a href="https://docs.google.com/document/d/1rPoj6-I7hCtRfK1SDgA5y628pTaPACKQvlQcYUV7fS8/copy" target="_blank" title=""> Now That's Surprising! Template</a></li>
 	<li style="display: inline"> | </li>
 	<li style="display: inline"><a href="https://docs.google.com/document/d/1rMlcppxtV-v9Ti7RDe6L6dlCczXXu8oQjZz8f9KLFaE" target="_blank" title=""> Steganography Activity</a></li>
 	</ul> 
