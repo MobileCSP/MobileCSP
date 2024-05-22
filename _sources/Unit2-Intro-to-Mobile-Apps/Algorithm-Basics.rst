@@ -99,8 +99,7 @@ Learning Activities
       (<a href="https://docs.google.com/document/d/1q8Tqyi9DTRIGsrqQEVMdLNEEKBX-LYVl6I9n5cgZe-8" target="_blank">instructions</a>).
     </p>
     <h3>Algorithm Basics</h3>
-    <p>Now that you've created algorithms to solve Maze puzzles using <span class="hover vocab yui-wk-div" data-id='sequence'>sequence</span>, <span class="hover vocab yui-wk-div" data-id='selection'>selection</span>, and <span class="hover vocab yui-wk-div" data-id='iteration'>iteration</span> here
-      is a summary of some basic points about algorithms. 
+    <p>Now that you've created algorithms to solve Maze puzzles using <span class="hover vocab yui-wk-div" data-id='sequence'>sequence</span>, <span class="hover vocab yui-wk-div" data-id='selection'>selection</span>, and <span class="hover vocab yui-wk-div" data-id='iteration'>iteration</span>, watch this video about algorithms by Dr. Ralph Morelli, one of the founders of Mobile CSP. 
     <br/>
     <span>
 
