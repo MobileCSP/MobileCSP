@@ -2,12 +2,13 @@
 
    <div class="logo-header"  id="student-logo"  > <img class="align-center" src="../_static/Mobile_CSP_Logo_White_transparent.png" width="250px"/> </div>
 
-ASSESSMENT: AP Create 1
-========================
+ASSESSMENT: AP Create 1 (revised)
+==================================
 
 .. raw:: html
 
-     <h3 id="est-length">Time Estimate: 6 hours (8 45 minute classes) minimum</h3><p>Follow these directions if you are taking CSP as an AP course. If you are in a non-AP CSP course, please go to the next lesson for Non-AP Create directions.
+     <div class="MCSP-lesson-content">
+     <h3 id="est-length">Time Estimate: 6 hours (8 45 minute classes) minimum</h3><p>Follow these directions if you are taking CSP as an AP course. If you are in a non-AP CSP course, please go to the next lesson for Non-AP Create directions.</p>
      
 Introduction and Goals
 -----------------------
@@ -25,7 +26,13 @@ Introduction and Goals
       <ul>
      </ul>
      <p>
-           In the official Create: Programming Performance Task #2 you will need to address <b>ALL</b> of the requirements and prompts as outlined in the performance task directions (i.e. a list, procedure with parameter, and algorithm with sequence, selection, and iteration). However, this is a <b>PRACTICE</b> programming performance task therefore not all aspects are required to be completed. You are not expected to include a procedure with a parameter for this practice task, but you should at least include a procedure. It is recommended that you try to include a loop.</p>
+           In the official Create: Programming Performance Task #2 you will need to address <b>ALL</b> of the requirements and prompts as outlined in the performance task directions (i.e. a list, procedure with parameter, and algorithm with sequence, selection, and iteration). However, this is a <b>PRACTICE</b> Create programming performance task therefore not all aspects are required to be completed. You are not expected to include a procedure with a parameter for this practice task, but you should at least include your own procedure. It is recommended that you try to include a loop. In this Create 1 practice app, you need to include the following. 
+           <ul><li>Variables</li>
+           <li>If/else block</li>
+           <li>Procedure (no parameters)</li> 
+           <li>Not required but could be included: lists, loops, procedures with parameters</li>
+           </ul>
+           </p>
 
 	<h3>Iterative Design Thinking Process</h3>
      <p>Use an Iterative Design Thinking Process to develop your app:<br>
@@ -79,7 +86,7 @@ Learning Activities
 
        <li><b>Enhanced App [Prototype and Test]</b>: Iteratively add and test new features for your app, meeting the grading guidelines.  For the Create 1 project, your project should have at least 1 variable, 1 procedure that you have defined, and use an if/else block. <ol type="a">
             <li><b>Documentation of Code:</b> For this assignment, a well documented app means having well named components, variables, and procedures. </li>
-            <li><b>Data:</b> For this assignment, your app should make appropriate use of variables and lists.</li>
+            <li><b>Data:</b> For this assignment, your app should make appropriate use of variables.</li>
             <li><b>Algorithms:</b> For this assignment, your app should include math and/or logic operations (math and if/ese blocks) and procedures.</li>
             <li><b>Abstraction:</b> For this assignment, your app should include a programmer defined procedure.</li>
 
@@ -220,11 +227,33 @@ Learning Activities
 
      -->
 
-	<h3>Submission</h3>
+	<h3>Submission and Practice Written Response Questions (revised)</h3>
 
-     <p>Create a <a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank" title="">video demonstration</a> of your app and answer the prompts outlined in the <a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Create Performance Task template</a>. Submit your video and answers to the prompts on your portfolio as a <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">portfolio write-up</a>.</p>
+     <p>Create a <a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank" title="">video demonstration</a> of your app and answer the prompts outlined in the <a href="https://docs.google.com/document/d/1oTdjdZGJgBocqmELHiyyuS_SmqGJN5mgV6ejwk7oOrQ/copy" target="_blank" title="">Create 1 Practice Performance Task template (new for 2024-2025)</a>. Submit your video and answers to the prompts on your portfolio as a <a href="https://docs.google.com/document/d/15H4awBUZ0GHNcG3zVaqHZ7grJHimhUEm7dPWfTmfWl0/" target="_blank" title="">portfolio write-up</a>.</p>
 
-    <p><font color="red">NEW as of Fall 2023,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete the old Create written response even though you do not need to submit it to the AP site.</p>
+    <p><font color="red">NEW as of 2024,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of code that will be submitted to the AP Digital Portfolio site. You will use your Personalized Project Reference to answer new written response questions during the AP exam. </p> 
+    <p>In this practice Create 1 task, you will answer the following practice written response questions in your copy of the <a href="https://docs.google.com/document/d/1oTdjdZGJgBocqmELHiyyuS_SmqGJN5mgV6ejwk7oOrQ/copy" target="_blank" title="">Create 1 Practice Performance Task template (new for 2024-2025)</a>. Note that the written response questions during the AP exam are unknown before the exam, but they will be similar to these: </p>
+    <h3>Practice Written Response Questions</h3>
+    <ol>
+    <li><b>Written Response 1: Program Design, Function, and Purpose</b>
+       <ol type="a"><li>Describe the overall purpose of the program</li>
+       <li>Describe the functionality of the program demonstrated in the video </li>
+       <li>Describe the input(s) and output(s) of the program demonstrated in the video</li>
+       <li>Identify the users of your app and how they would use it.</li>
+       </ol>
+    </li>
+    <li> <b>Written Response 2(a) Algorithm Development:</b> (From 2024 exam) Consider the first conditional statement included in the Procedure section of your Personalized Project Reference. Describe your conditional statement, including its Boolean expression. Describe what the procedure does in general when the Boolean expression of this conditional statement evaluates to false. </li>
+    <li><b>Written Response 2(b): Errors and Testing:</b>
+    <ol type="a"><li>  (From 2024 exam) Consider the procedure and procedure call identified in parts (i) and (ii) of the Procedure section of your Personalized Project Reference. Describe the outcome that your procedure call is intended to produce.
+    </li>
+    <li>Describe how you tested this procedure and any errors that occurred or could have occurred and how you fixed them.</li>
+    </ol></li>
+    <li><b>Written Response 2(c): Data and Procedural Abstraction: </b>
+    <ol type="a"><li>Consider the procedure identified in part (i) of the Procedure section of your Personalized Project Reference. Explain what the identified procedure does and how it contributes to the overall functionality of the program. </li>
+    <li>Explain how the use of data abstraction in your variables and the use of procedural abstraction in your procedure manages complexity in program code.	</li>
+    </ol></li>
+    </ol>
+    
 
     
 Resources
@@ -248,3 +277,4 @@ Resources
             <li><a href="https://docs.google.com/drawings/d/1M-DZITeDT9aiPZ7Oz-kXKEGkn0DiFOH1i8idBNlxwCA/edit" target="_blank">Paper Prototype Template</a></li>
 
        </ul>     
+       </div>
