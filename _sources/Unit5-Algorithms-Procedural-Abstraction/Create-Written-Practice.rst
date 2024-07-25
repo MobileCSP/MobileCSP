@@ -240,6 +240,6 @@ Reflection: For Your Portfolio
 .. raw:: html
 
 	<p><div class="yui-wk-div" id="portfolio">
-    <p>Include your PPR and your answers from the <a href="https://docs.google.com/document/d/1x9GDBEPLNZ8_PXEyZ56cgGJ738O-ks6SGdbNFZ10llU/copy" target="_blank">Practice Written Responses</a> from above in your portfolio. 
+    <p>Include your PPR and your answers from the <a href="https://docs.google.com/document/d/1x9GDBEPLNZ8_PXEyZ56cgGJ738O-ks6SGdbNFZ10llU/edit" target="_blank">Practice Written Responses</a> from above in your portfolio. 
     </div></p>
 	</div>

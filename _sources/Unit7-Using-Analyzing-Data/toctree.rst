@@ -19,7 +19,5 @@ Using and Analyzing Data & Information
 	Artificial-Intelligence-and-Machine-Learning.rst
 	Impacts-of-CS-Who-Owns-the-Bits.rst
 	Wrap-Up.rst
-	Create-PT-Samples.rst
-	Create-Written-Practice.rst
 	apcreate2.rst
 	nonapcreate2.rst

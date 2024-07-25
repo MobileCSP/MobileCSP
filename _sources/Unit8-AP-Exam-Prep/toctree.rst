@@ -20,5 +20,6 @@ AP CS Principles Exam Prep
 	Explore-Innovations-Passage-Questions.rst
 	Create-Written-Response-Questions.rst
 	Resources.rst
+	Old-Create-PT-Samples.rst
 	exam.rst
 	

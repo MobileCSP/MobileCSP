@@ -2,8 +2,8 @@
 
    <div class="logo-header"  id="student-logo"  > <img class="align-center" src="../_static/Mobile_CSP_Logo_White_transparent.png" width="250px"/> </div>
 
-Create PT Prep and Samples 
-==========================
+Old Create PT Prep and Samples 
+===============================
 
 .. raw:: html
 
@@ -76,9 +76,9 @@ Create PT Prep and Samples
 	   });
 	 });
 	</script>
-	<h3>Create PT Samples</h3>
+	<h3>Old Create PT Samples (prior to 2024)</h3>
 	<p>
-	 Below are some Create Performance Task samples that were submitted in prior years and were selected by the College Board to be featured on the AP CSP Exam page. We have selected some of the samples that used MIT's App Inventor as the programming language. In some cases, additional explanations and commentary are provided to give you more insight into what is expected of you for this task. 
+	 Below are some Create Performance Task samples that were submitted in prior years before the Create PT changes in 2024. These were selected by the College Board to be featured on the AP CSP Exam page. We have selected some of the samples that used MIT's App Inventor as the programming language. In some cases, additional explanations and commentary are provided to give you more insight into what is expected of you for this task. 
 	</p>
 	
 
