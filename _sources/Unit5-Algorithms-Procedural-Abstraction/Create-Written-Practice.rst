@@ -2,11 +2,12 @@
 
    <div class="logo-header"  id="student-logo"  > <img class="align-center" src="../_static/Mobile_CSP_Logo_White_transparent.png" width="250px"/> </div>
 
-Create PT Written Response Practice (optional) 
-==============================================
+Quiz App Written Response Questions Practice (NEW)
+=======================================================
 
 .. raw:: html
 
+	 <div class="MCSP-lesson-content">
 	<script>
 	  $(document).ready(function() {
 	    generateSummary(EKmapping['8.11']);
@@ -23,7 +24,6 @@ Create PT Written Response Practice (optional)
 	
 	</script>
 	
-	<p><i>Note: This lesson can be completed in this unit or in Unit 7 before doing the final Create project.</i></p>
 	<h3 id="est-length">Time Estimate: 180 minutes</h3>	
 	
 	<img src="../_static/assets/img/introandgoalsicon.png" width="25" height="25" style="float:left">
@@ -36,11 +36,11 @@ Introduction and Goals
 	
 	<p></p>
 	<table><tbody>
-	  <tr><td><iframe src="https://drive.google.com/file/d/1fWruRmW7ldAgJFPNhNC1Nog5DHLMAuUN/preview" allowfullscreen="" width="315" height="420" frameborder="0"></iframe>
+	  <tr><td><img src="../_static/assets/img/QuizAppScreenShot.png"  width="315"></img>
 	  <br><br></td>
 	<td>
-	  <p><b><i>The Language Learning Game</i></b>&nbsp;is an educational memory app that allows users to practice learning a different language. The game's code contains all of the programming requirements to satifsy the College Board's Create Performance Task scoring guidelines.</p>
-	  <p><b>Objective:</b> In this lesson you will practice answering the Create Performance Task prompts.</p>
+	  <p><b><i>The extended Quiz App</i></b>&nbsp; which you completed in the last lesson contains all of the programming requirements to satisfy the College Board's Create Performance Task scoring guidelines.</p>
+	  <p><b>Objective:</b> In this lesson, you will practice creating a PPR (Personalized Project Reference) and using it to answer sample Create Performance Task Written Response Questions.</p>
 	    </td></tr>
 	  </tbody></table>
 	
@@ -50,25 +50,16 @@ Learning Activities
 
 .. raw:: html
 
-	<h3>Enhancements </h3>
-	<p>Before you can respond to the prompts in the Create Performance Task, you will need to understand how the game works and examine the code that has been provided for you. Complete the enhancement activities to help you get familiar with the code. Remember to work incrementally: implement, test, review, and repeat. You may use <a href="https://docs.google.com/document/d/1RCGzd0OSohNxA5Y5bDARUmUXIAJ-4Uit9UJfwi49NF0/copy" target="_blank" title="">this document</a> to track your progress as you work.
-	<br></p>
 	
+	<h3>Personalized Project Reference (PPR)	</h3>
+	<p>For the Create Performance Task, you will need to submit a Personalized Project Reference (PPR) that includes screenshots of your code. </p>
 	<ol>
-	<li>Download the <a href="https://drive.google.com/file/d/1DasxGOn3N8BFOM7VJ9p-Dwbk7xpGAH5z/view?usp=sharing" target="_blank">.aia file</a> for The Learning Game.</li>
-	<li>Import the file into MIT's App Inventor</li>
-	<li>Try playing the game on your device and explore the code.</li><li>Try making these three enhancements:</li>
-		<ul>
-		<li>Change the app's language to a different language so your app helps you learn to count in that language</li>
-		<li>Change the initial count of numbers that are spoken to initiate the game.</li>
-		<li>Try adding a few more numbers to the game</li>
-		</ul>
+	<li>Open your Quiz App project with the searching extension from the last lesson in MIT App Inventor.</li>
+	<li>Make a copy of the <a href="https://docs.google.com/document/d/14JzNQG9H2ucMdmBtqXWJo8n7fXXioDvCoqsN9xk9wq8/copy" target="_blank" title="PPR">PPR template</a>.</li>
+	<li> Follow the directions to paste in screenshots of your code. In App Inventor, you can right click on blocks to "Download Blocks as Image" or use a snipping tool to capture screenshots. </li>
 	</ol>
 	  
-	<h3>Create Performance Task Write-up Activity </h3>
-	<p>Once you have tried the game and understand the code, practice preparing for the AP CSP Create Performance Task submission by creating a video, the project code, and the Personalized Project Reference screenshots new in 2024, and the Create written responses prior to 2024 to prepare you for the written exam.  <br></p>
-	<ol><li>Review the Create Performance Task submission instructions in the <a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf" target="_blank" title="AP CSP Student Create PT Directions">AP CSP Student Directions</a>.</li>
-	<li>Make a copy of the <a href="https://docs.google.com/document/d/10cdrgYtXk40P_PAMevZEQX_0bxqCnP-QdCeBWI0z28Q/copy" target="_blank" title="submission document">submission document</a> and complete the write up activity. </li></ol><p></p>
+	<h3>Written Response Questions </h3>
 	
 	<p>On the end-of-course AP CSP exam, you will respond to 4 prompts related to the code in your Personalized Project Reference. You will have access to your Personalized Project Reference while responding to these prompts. Students should be prepared to respond to prompts about their program that assess any of the following learning objectives. </p>
 
@@ -115,6 +106,32 @@ Learning Activities
 	</li>
 	</ul>
 
+	<p>Practice for the written response questions with the following prompts which you can answer in a copy of this <a href="https://docs.google.com/document/d/1x9GDBEPLNZ8_PXEyZ56cgGJ738O-ks6SGdbNFZ10llU/copy" target="_blank">practice written responses document</a>. </p>
+    <ol>
+    <li><b>Written Response 1: Program Design, Function, and Purpose</b>
+       <ol type="a"><li>Describe the overall purpose of the program</li>
+    
+       <li>Describe the input(s) and output(s) of the program demonstrated in the video</li>
+       <li>(From 2024 Exam) Identify the expected group of users of your program. Explain how your program addresses at least one concern or interest of the users you identified.</li>
+       </ol>
+    </li>
+    <li> <b>Written Response 2(a) Algorithm Development:</b> 
+	 <ol type="a"><li>(From 2024 exam) Consider the first iteration statement included in the Procedure section of your Personalized Project Reference. Describe what is being accomplished by the code in the body of the iteration statement.</li>
+	 <li>Consider  the code segment in part (i) of the List section of your Personalized Project Reference that shows your list. Describe what the data contained in this list represents in your program. </li>
+	 <li>Consider the code segment in part (ii) of the List section of your Personalized Project Reference that shows how your list is being used. Explain in detailed steps how this code segment works. Your explanation must be detailed enough for someone else to write the code segment. </li>
+	 </ol></li>
+    <li><b>Written Response 2(b): Errors and Testing:</b>
+    <ol type="a"><li>  (From 2024 exam) Consider the procedure identified in part (i) of the Procedure section of your Personalized Project Reference. Write two calls to your procedure that each cause a different code segment in the procedure to execute. Describe the expected behavior of each call. If it is not possible for two calls to your procedure to cause different code segments to execute, explain why this is the case for your procedure. 
+    </li>
+    <li>(From 2024 Exam): Consider the procedure and procedure call identified in parts (i) and (ii) of the Procedure section of your Personalized Project Reference. Describe the outcome that your procedure call is intended to produce. Write a new procedure call with at least one different argument value that will produce the same outcome, if possible, and explain why this procedure call produces the same outcome. If it is not possible to write a new procedure call that produces the same outcome, explain why this is not possible. </li>
+    </ol></li>
+    <li><b>Written Response 2(c): Data and Procedural Abstraction: </b>
+    <ol type="a"><li>(From 2024 Exam) Consider the procedure identified in part (i) of the Procedure section of your Personalized Project Reference. Identify the parameter(s) used in this procedure. Explain how your identified parameter(s) use abstraction to manage complexity in your program. </li>
+    <li>(From 2024 Exam) Suppose another programmer provides you with a procedure called checkValidity(value) that returns true if a value passed as an argument is considered valid by the other programmer and returns false otherwise. Using the list identified in the List section of your Personalized Project Reference, explain in detailed steps an algorithm that uses checkValidity to check whether all elements in your list are considered valid by the other programmer. Your explanation must be detailed enough for someone else to write the program code for the algorithm that uses checkValidity. </p><p>(Hint: write pseudocode that steps through your list of questions in the Quiz App and calls the checkValidity(value) function with each question in the list. Words you should use: loop, if, index, checkValidity with the correct argument. Don’t worry about what checkValidity does, just use it; we can imagine that it checks that the question has correct spelling and punctuation.)</p>
+	</li>
+    </ol></li>
+    </ol>
+    
 
 Summary
 -------
@@ -163,16 +180,16 @@ Self-Check
     :random:
     :practice: T
     :answer_a: It could be written without a list, but we would need 9 global variables each with the number in them and then a random number generator to call these numbers. Now we have a built in system to generate a random sequence. It puts all the data in one location that can be accessed with an index number. 
-    :feedback_a: This response does not provide enough detail regarding the random number generation for someone else to be able to recreate the program code.
+    :feedback_a: This response does not provide enough detail regarding how the list manages complexity in the program.
     :answer_b: The ButtonItems list manages the complexity of my program since it gives a set of numbers the text-to-speech can say that can be sorted or ordered randomly, and easily changed if I wanted to expand the app to include a language other than French. Without this list the program would need to individually call the numbers and set them in a random order manually, which would be more difficult than using a list where the values can be easily called by the program and ordered randomly by selecting a random list item; likewise, I’d have to manually go into the procedures that start the game and other rounds without a list and adjust the values individually to expand the program. 
     :feedback_b: Correct! This response identifies a list that is being used to manage complexity in the program and also explains how the list manages complexity in the program code by explaining how it would be written without using the list.
     :answer_c: This list manages complexity in the program because without the lists there would not be a purpose or way for the app to function. Without this list and how it is looped through for each item so the global speakListAsText variable will give the user random numbers, an if, then, else, statement will have to be repeated for each of the numbers so the speakListAsText variable to work.
-    :feedback_c: This response does not explain how the selected list manages complexity. Saying “there would not be a purpose or way for the app to function” is inaccurate.
+    :feedback_c: This response does not clearly explain how the selected list manages complexity. Saying “there would not be a purpose or way for the app to function” is inaccurate.
     :answer_d: This list is very important for the development of the app because it is the main structure. This list represents the input that appears on the spreen when the buttons are pressed which allows the user to know what buttons that they have already pressed. It also is the main items that are used for the game for the speech and the names of the buttons. The code would have to be written differently because you would have to list out all of the items in the button list each time you would normally put the procedure. 
-    :feedback_d: Try again.
+    :feedback_d: This response does not clearly explain how the selected list manages complexity. 
     :correct: b
 
-    Which of the following responses about the Learning App would earn a point for Row 3 of the scoring guidelines (managing complexity)?
+    Which of the following responses would probably earn a point for a question how a list would manage complexity in a Language Learning app for Written Response 2(c): Data and Procedural Abstraction?
 
 
 .. raw:: html
@@ -182,7 +199,7 @@ Self-Check
     </div>
 
 
-.. mchoice:: mcsp-7-11-2
+.. .. mchoice:: mcsp-7-11-2
     :random:
     :practice: T
     :answer_a: False 
@@ -191,19 +208,12 @@ Self-Check
     :feedback_b: That's right!
     :correct: b
 
-        True or False: The following response about the Learning App earns a point for Row 3 of the scoring guidelines (managing complexity)?
+        True or False: The following response about a Language Learning App ?
 
         “The list speakList helps to manage complexity in the program because it is used in many different locations for similar and different reasons and is added to every round.  Without this list the program would no longer be able to be infinite, within computational boundaries, because there would need to be infinite variables for an infinite game with the list it is just added to.”
 
 
-.. raw:: html
-
-    <div id="bogus-div">
-    <p></p>
-    </div>
-
-
-.. mchoice:: mcsp-7-11-3
+.. .. mchoice:: mcsp-7-11-3
     :random:
     :practice: T
     :answer_a: False
@@ -230,8 +240,6 @@ Reflection: For Your Portfolio
 .. raw:: html
 
 	<p><div class="yui-wk-div" id="portfolio">
-    <p>Answer the following portfolio reflection questions as directed by your instructor. Questions are also available in this <a href="https://docs.google.com/document/d/10cdrgYtXk40P_PAMevZEQX_0bxqCnP-QdCeBWI0z28Q/copy" target="_blank">Google Doc</a> where you may use File/Make a Copy to make your own editable copy.</p>
-    <div style="align-items:center;"><iframe class="portfolioQuestions" scrolling="yes" src="https://docs.google.com/document/d/10cdrgYtXk40P_PAMevZEQX_0bxqCnP-QdCeBWI0z28Q/pub?embedded=true" style="height:30em;width:100%"></iframe></div>
-    </div>
-    </img></div>
-    </div>
+    <p>Include your PPR and your answers from the <a href="https://docs.google.com/document/d/1x9GDBEPLNZ8_PXEyZ56cgGJ738O-ks6SGdbNFZ10llU/copy" target="_blank">Practice Written Responses</a> from above in your portfolio. 
+    </div></p>
+	</div>
