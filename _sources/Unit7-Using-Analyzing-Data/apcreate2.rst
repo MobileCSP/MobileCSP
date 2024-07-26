@@ -9,7 +9,7 @@ ASSESSMENT: AP Create 2
 
 	
 	<div class="MCSP-lesson-content">
-	<h3 id="est-length">Time Estimate: 9 hours (12 45 minute classes) minimum as of Fall 2023</h3>
+	<h3 id="est-length">Time Estimate: 9 hours (12 45 minute classes) minimum as of 2024</h3>
 	<p>Follow these directions if you are taking CSP as an AP course. If you are in a non-AP CSP course, please go to the next lesson for Non-AP Create directions.</p>
 
 Introduction and Goals
@@ -24,10 +24,18 @@ Introduction and Goals
 	  </p><ul>
 	    <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions </a> </li>
 	   
-		<li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a>. To access these videos, navigate to the Course Guide section in the left navigation pane of the AP Classroom homepage, select the Overview page, and then click on the Student Resources header to expand the list of available resources.  </li>
+		<li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">Create Task Videos in AP Classroom </a>. To access these videos, navigate to the Course Guide section in the left navigation pane of the AP Classroom homepage, select the Overview page, and then click on the Student Resources header to expand the list of available resources.  </li>
 	</ul>
 
-	<p><font color="red">NEW as of Fall 2024,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. To prepare for these questions, you should complete the old Create written responses even though you do not need to submit those the AP site. There are also some written response practice questions in Unit 8 and in the AP Classroom.</p>
+	<p><font color="red">NEW as of 2024,</font> you no longer need to turn in a Create written response to the AP Digital Portfolio submission site. However, students should still complete the Create written response to prepare for the AP exam. The Create performance task still consists of three components—program code, video, and instead of the written response, a student-authored Personalized Project Reference containing screen captures of their list and procedure. You will use your Personalized Project Reference to answer questions during the AP exam. There are also some written response practice questions in Unit 8 and in the AP Classroom.</p>
+
+	<p>Keep in mind that for the Create task you need to include the following in your app:
+           <ul><li>a list</li>
+		    <li>your own procedure with parameters</li> 
+           <li>a loop iterating through the list</li>
+		   <li>a conditional (if block)</li>
+           </ul>
+           </p>
 
 	
 Learning Activities
@@ -57,7 +65,7 @@ Learning Activities
 	          </td></tr></tbody></table>
 	
 	<h3>Iteration 1: Paper Prototype</h3>
-	<p>Before you start creating your app in MIT App Inventor, you will brainstorm ideas on paper with a partner and present an elevator pitch to your class. When brainstorming, keep in mind that for the Create 2 project, your project should use a List and if needed a database like TinyDB for handling data, as well as procedures with parameters that you have defined and sequence, selection, and iteration. Complete the following:</p>
+	<p>Before you start creating your app in MIT App Inventor, you will brainstorm ideas on paper with a partner and present an elevator pitch to your class. When brainstorming, keep in mind that for the Create  project, your project should use a List and if needed a database like TinyDB for handling data, as well as procedures with parameters that you have defined and sequence, selection, and iteration. Complete the following:</p>
 	<ul>
 	  <li><b>
 	    Description of Problem [Empathize, Define, and Ideate]:</b> Working in pairs, think about problems in your community and how an app might help to solve those problems or to help people in your community. Who is the target audience or users who will be using the app? What problem does the app address? How does the app address the problem? What data might your app need? What data would the app need as input and provide as output?</li>
@@ -69,7 +77,7 @@ Learning Activities
 	</ul>
 	
 	<h3>Iteration 2: Minimal App</h3>
-	<p>Working in pairs, create a minimal working app. Remember that for the Create 2 project, your project should use a List and if needed a database like TinyDB for handling data, as well as procedures with parameters that you have defined and sequence, selection, and iteration. Complete the following:
+	<p>Working in pairs, create a minimal working app. Remember that for the Create project, your project should use a List and if needed a database like TinyDB for handling data, as well as procedures with parameters that you have defined and sequence, selection, and iteration. Complete the following:
 	</p>
 	
 	<ul>
@@ -106,7 +114,7 @@ AP Create Task Submission: Code, Video, and Personalized Project Reference
 
 	<p>If you are taking the course for AP credit, please watch consult the <a href="https://apcentral.collegeboard.org/pdf/digital-portfolio-student-user-guide-ap-csp.pdf" target="_blank" style="font-size: 13px; font-weight: 400;" title="">AP Digital Portfolio Student Guide</a> to learn how to submit your Create project to the <a href="https://apcapstone.collegeboard.org/" target="_blank">AP College Board Digital Portfolio site</a><span style="font-size: 13px; font-weight: 400;">. You must submit your Create Performance Task by&nbsp;</span><b style="font-size: 13px;">April 30th</b><span style="font-size: 13px; font-weight: 400;">&nbsp;and include your AP number which you will receive from your AP coordinator. </span></p>
 
-	<p>For the Create 2 project, you will submit the following to the AP Digital Portfolio site. You may use the <a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Mobile CSP Create Performance Task template</a> as a guide. This contains the new requirements as well as the older written response questions from prior to 2024 which we encourage you to complete (although you will not upload them) in order to prepare for the written response questions that are now in the AP CSP exam. There are also some written response practice questions in Unit 8 and the AP Classroom. </p>
+	<p>For the Create project, you will submit the following to the AP Digital Portfolio site. You may use the <a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Mobile CSP Create Performance Task template</a> or the simpler <a href="https://docs.google.com/document/d/14JzNQG9H2ucMdmBtqXWJo8n7fXXioDvCoqsN9xk9wq8/copy" target="_blank" title="PPR">PPR template</a> as a guide. The Mobile CSP template contains the new PPR requirements as well as practice written response questions which we encourage you to complete (although you will not upload them) in order to prepare for the written response questions that are now in the AP CSP exam. There are also some written response practice questions in Unit 8 and the AP Classroom. </p>
 	<ul>
 	<li><b>COMPONENT A: PROGRAM CODE</b> - Submit one PDF file that contains all of your program code (including comments). Your code should include user or file input, output, a list, a procedure with a parameter, selection and iteration blocks. Include comments or acknowledgments for any part of the submitted program code that has been written by someone other than you and/or your collaborative partner(s).  In App Inventor, you can right click to "Download Blocks as Image" or use a snipping tool to capture screenshots. You can paste these images in a Google doc and then export it as a pdf.</li>
 	<li><b>COMPONENT B: VIDEO</b> - Create a 1 minute anonymous video presentation providing a demo of your working app. See <a href="https://docs.google.com/document/d/1-4oA9bdqDRse1nYpV2wxHnOIwFNas01TbeRnVSBKQ6I/view" target="_blank">How To: Create an App Video</a> for help. The video should show your running program, including input to your program, at least one aspect of the functionality of your program, and output produced by your program. Collaboration is not allowed during the development of your video. The video must not contain any distinguishing information about yourself nor voice narration (though text captions are encouraged). The video must be in either .mp4, .wmv, .avi, or .mov format and may not exceed one minute in length and 30MB in file size.  </li>
@@ -129,6 +137,8 @@ Resources
 	<ul>
 	
 	    <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank" title="">Create Performance Task Description and Instructions </a> </li>
+	    <li>	<a href="https://docs.google.com/document/d/14JzNQG9H2ucMdmBtqXWJo8n7fXXioDvCoqsN9xk9wq8/copy" target="_blank" title="PPR">PPR template</a></li>
+		<li><a href="https://docs.google.com/document/d/1B0VUXo-voVro_paLykF153QKtZ-urzrY-JkNFxBZjDA/copy" target="_blank" title="">Mobile CSP Create Performance Task template</a>
 	    <li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles" target="_blank" title="">Old Create Performance Task Scoring Guidelines </a> </li>
 		<li><a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment" target="_blank">AP CSP Exam information page</a></li>
         <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a> </li>

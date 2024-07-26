@@ -21,10 +21,8 @@ Introduction and Goals
      <ul>
       <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank">Create Performance Task Description and Instructions for 2024</a></li>
     
-		  <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a>. To access these videos, navigate to the Course Guide section in the left navigation pane of the AP Classroom homepage, select the Overview page, and then click on the Student Resources header to expand the list of available resources.  </li>
+		  <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">Create Task Videos in AP Classroom </a>. To access these videos, navigate to the Course Guide section in the left navigation pane of the AP Classroom homepage, select the Overview page, and then click on the Student Resources header to expand the list of available resources.  </li>
       </ul>
-      <ul>
-     </ul>
      <p>
            In the official Create: Programming Performance Task #2 you will need to address <b>ALL</b> of the requirements and prompts as outlined in the performance task directions (i.e. a list, procedure with parameter, and algorithm with sequence, selection, and iteration). However, this is a <b>PRACTICE</b> Create programming performance task therefore not all aspects are required to be completed. You are not expected to include a procedure with a parameter for this practice task, but you should at least include your own procedure. It is recommended that you try to include a loop. In this Create 1 practice app, you need to include the following. 
            <ul><li>Variables</li>
@@ -264,6 +262,8 @@ Resources
      <ul>
 
             <li><a href="https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf?course=ap-computer-science-principles#page=4" target="_blank" title="">Create Performance Task Description and Instructions</a></li>
+            <li><a href="https://docs.google.com/document/d/14JzNQG9H2ucMdmBtqXWJo8n7fXXioDvCoqsN9xk9wq8/copy" target="_blank" title="PPR">PPR template</a></li>
+            <li>
             <li><a href="https://apcentral.collegeboard.org/media/pdf/ap23-sg-computer-science-principles.pdf?course=ap-computer-science-principles target="_blank" title="">Create Performance Task Scoring Guidelines</a></li>
             <li><a href="https://apstudents.collegeboard.org/courses/ap-computer-science-principles/assessment" target="_blank">AP CSP Exam information page</a></li>
             <li><a href="https://apclassroom.collegeboard.org/" target="_blank" title="">4 Create Task Videos in AP Classroom </a> </li>
