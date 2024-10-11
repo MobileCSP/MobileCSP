@@ -379,7 +379,27 @@ Self-Check
     </tr>
     </tbody>
     </table>
+
+    The following image shows a procedure definition with a parameter and two procedure calls with different arguments that will be saved in the parameter variable and used. 
+    On the AP CSP Exam, you will need to be able to write two procedure calls with different arguments.
     
+    <img src="../_static/assets/img/procedureParamArg.png" width="80%"/>
+
+.. mchoice:: mcsp-5-2-0
+    :random:
+    :practice: T
+    :answer_a: PROCEDURE drawSquare(L) 
+    :feedback_a: Sorry, this looks like the start of a procedure definition
+    :answer_b: forward(20) turn(90) forward(20) turn(90) forward(20) turn(90) forward(20) turn(90)  
+    :feedback_b: Sorry, this looks like the procedure code to draw a square, not the call to the procedure.
+    :answer_c: drawSquare(20)
+    :feedback_c: Correct!  
+    :answer_d: drawSquare()
+    :feedback_d: This is close, but you need to give the procedure an argument for the size of the square.
+    :correct: c
+
+    Which of the following AP pseudocode calls the procedure drawSquare to draw a 20x20 square?
+
 .. mchoice:: mcsp-5-2-1
     :random:
     :practice: T
