@@ -56,4 +56,5 @@ Create Written Response Questions (new)
 	<ol><li>Make a copy of your Personalized Project Reference from the Create Project</li> 
 	<li>Make a copy and answer the <a href="https://docs.google.com/document/d/1msdaqYxAMnlBD2lhBn14vYenIi79yXl-9TB61RWX1OU/edit?usp=sharing" target="_blank">Written Response Practice Questions</a></li>
 	<li>For more practice, do the AP Classroom Practice Exams for Written Response Questions with your Personanlized Project Reference and use the Scoring guides in the AP Classroom to score them.</li>
+	<li>Analyze the sample responses from the 2024 Exam here <a href="https://sites.google.com/gilroyunified.org/computerscience/principles-ap/create-task/sample-responses" target="_blank">Tim Clark's CSP site: Sample Responses</a>.</li>
 	</ol>
