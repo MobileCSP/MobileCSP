@@ -498,10 +498,11 @@ Sample AP CSP Exam Question
     :feedback_d: 
     :correct: c
 
-    The figure below shows a robot in a grid of squares. The robot is represented as a triangle, which is initially facing upward. The robot can move into a white or gray square but cannot move into a black region.   Consider the procedure MoveAndTurn below.Which of the following code segments will move the robot to the gray square?
+    The figure below shows a robot in a grid of squares. The robot is represented as a triangle, which is initially facing upward. The robot can move into a white or gray square but cannot move into a black region. Consider the procedure MoveAndTurn(numMoves, numTurns) below. Which of the following code segments will move the robot to the gray square?
 
     .. raw:: html
 
+        <img alt="MoveAndTurn(numMoves,numTurns)" class="yui-img" src="../_static/assets/img/Q18Code.png" style="line-height: 1.22;" title=""/>
         <img alt="" class="yui-img" src="../_static/assets/img/Q18SquareQuestion.png" style="line-height: 1.22;" title=""/>
 
 
