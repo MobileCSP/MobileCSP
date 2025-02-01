@@ -112,7 +112,7 @@ Learning Activities
     <tbody><tr><th>Role</th><th>Responsibility</th></tr>
     <tr>
     <td>Facilitator</td>
-    <td>Uses the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and trace tools online at <a href="http://network-tools.com/" target="_blank">network-tools.com</a>.
+    <td>Uses the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and trace tools online at the chosen network tools online site.
             </td>
     </tr>
     <tr>
@@ -130,17 +130,17 @@ Learning Activities
     </tbody></table>
     <p>
       In this activity, 
-      you will use the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and <span class="hover vocab yui-wk-div" data-id='traceroute'>traceroute</span> utilities at <a href="http://network-tools.com/" target="_blank">network-tools.com</a> to measure the latency and observe trace routes to answer the following question.
+      you will use the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and <span class="hover vocab yui-wk-div" data-id='traceroute'>traceroute</span> utilities at an online network tools website (<a href="http://networktools.nl/ping" target="_blank">http://networktools.nl/ping</a> or <a href="https://www.broadbandsearch.net/ping" target="_blank">https://www.broadbandsearch.net/ping</a> or <a href="http://network-tools.com/" target="_blank">network-tools.com</a>) to measure the latency and observe trace routes to answer the following question. For traceroute, you may also use a href="https://traceroute-online.com/" target="_blank">https://traceroute-online.com/</a> to see a map of the hops in the route.
       </p><blockquote>
     <b>Does geographical distance between the source and the destination 
           on the network affect latency?
         </b>
     </blockquote>
-    <p>You will use multiple trials of <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and trace for 5 university servers around the globe (mit.edu, stanford.edu, ox.ac.uk, kyoto-u.ac.jp, usp.br) to answer the questions below.</p>
+    <p>You will use multiple trials of <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and trace for 5 university servers around the globe (mit.edu, stanford.edu, ox.ac.uk, tokyo-u.ac.jp, usp.br) to answer the questions below. Record the results of the ping times and trace hops in the worksheet given above.</p>
 	<ol>
     <li style="margin-bottom: 5px;">Did any of the servers lose packets or time out?  Some servers will block <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and trace for security reasons which are seen as time outs. Were there any surprising locations in the hops that the <span class="hover vocab yui-wk-div" data-id='packet'>packet</span> went through?</li>
     <li style="margin-bottom: 5px;">Did different trials have different results for the same destination? Do packets always get routed in the same way?</li>
-    <li style="margin-bottom: 5px;">Can you guess where the network-tools server is located based on the latency data you collected? Can you confirm your guess using trace or whois (which gives you information about who owns a server)? </li>
+    <li style="margin-bottom: 5px;">Can you guess where the network tools server that you used is located based on the latency data you collected? Can you confirm your guess using trace or whois (which gives you information about who owns a server)? </li>
     <li style="margin-bottom: 5px;">Select one route and specify all the directly-connected computing devices along the route which form a path between the sender and the receiver. How many hops are taken on this path? List each device on this path.</li>
     <li style="margin-bottom: 5px;">How does the number of hops in the trace affect latency (the round trip time seen in <span class="hover vocab yui-wk-div" data-id='ping'>ping</span>)?  </li>
     <li> (<b>Portfolio</b>) How does geographical distance affect latency? What are some other factors that may be affecting latency? </li>

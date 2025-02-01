@@ -169,7 +169,7 @@ Still Curious?
     of Rapunzel's hair.  This work was done by Trinity CS alumna Kelly Ward (PhD, UNC), who
     currently is a senior software engineer at Disney.
     </li>
-    <li><a href="http://sciencenetlinks.com/tools/scale-universe-2/" target="_blank" title="">The Scale of the Universe</a> is an interactive model of that provides a sense of the relative size of different objects in the universe —
+    <li><a href="https://scaleofuniverse.com/en" target="_blank" title="">The Scale of the Universe</a> is an interactive model of that provides a sense of the relative size of different objects in the universe —
      DNA, earthworms, states, planetary moons, nebula, etc. </li>
     <li>Here are some more <a href="http://netlogoweb.org/launch#http://netlogoweb.org/assets/modelslib/Sample%20Models/Biology/Wolf%20Sheep%20Predation.nlogo" target="_blank">sample models and simulations</a> including a similar sheep/wolves model.</li>
     </ul>
