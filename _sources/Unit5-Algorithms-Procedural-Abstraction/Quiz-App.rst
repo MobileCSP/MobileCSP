@@ -112,15 +112,14 @@ Learning Activities
     <ol>
     <li>Which computer science pioneer broke the German Enigma Code during the World War II?
       </li>
-    <li>Which recent movie showcases the first African-American women who worked as human “computers” for NASA?
-      </li>
+    <li>Which NASA engineer was the first black female engineer at NASA and a human computer featured in the movie Hidden Figures?  </li>
     <li>Which Navy admiral led the creation of COBOL, one of the first high level programming languages?
       </li>
     </ol>
     The corresponding answers are:
     <ol>
     <li>Alan Turing</li>
-    <li>Hidden Figures</li>
+    <li>Mary Jackson</li>
     <li>Grace Hopper</li>
     </ol>   
     The corresponding images are:
