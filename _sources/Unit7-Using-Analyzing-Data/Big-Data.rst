@@ -323,11 +323,11 @@ Learning Activities
     <li><a href="http://en.wikipedia.org/wiki/Big_data" target="blank">Wikipedia Article on Big Data</a> </li>
     <li>Reddit maintains a <a href="http://www.reddit.com/r/dataisbeautiful/top/" target="blank">Data is Beautiful</a>
             site that has lots of visualizations of interesting data sets. Browse through that collection. </li>
-    <li>These <a href="https://think.cs.vt.edu/corgis/visualizer/index.html" target="_blank">data sets</a> allow you
+    <li>These <a href="https://corgis-edu.github.io/corgis/" target="_blank">CORGIS data sets</a> allow you
             to create visualizations with different types of graphs to explore the data.</li>
     <li>Here's a nice visualization of <a href="http://www.nytimes.com/interactive/2012/05/13/business/student-debt-at-colleges-and-universities.html?ref=tuition&amp;_r=2&amp;" target="blank">student debt</a> that was put together by the New York Times. </li>
-    <li>This is a nice <a href="http://evolutionofweb.appspot.com/#/growth/day" target="_blank">interactive
-              visualization</a> of how the Internet has grown and when various technologies have been introduced. </li>
+    <!--<li>This is a nice <a href="http://evolutionofweb.appspot.com/#/growth/day" target="_blank">interactive
+              visualization</a> of how the Internet has grown and when various technologies have been introduced. </li>-->
     <li>NY Times <a href="https://www.nytimes.com/interactive/2017/01/18/world/how-much-warmer-was-your-city-in-2016.html#hfd" target="_blank"> How much warmer was your city in 2016? visualization</a></li>
     <li>NY Times <a href=" https://www.nytimes.com/interactive/2019/12/02/climate/air-pollution-compare-ar-ul.html" target="_blank"> Air Pollution in Cities visualization</a></li>
     </ul>
