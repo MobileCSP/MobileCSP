@@ -205,11 +205,7 @@ The following code will print out each item in the list on a separate line.
 Picture Project
 ----------------
 
-.. figure:: ../../_static/assets/img/student.jpg
-    :width: 200px
-    :align: left
-
-Photographs and images are made up of **pixels** which are tiny picture elements that color in the image. The color of a pixel is represented using the RGB (Red, Green, Blue) color model, which stores values for red, green, and blue, each ranging from 0 to 255. You can make any color by mixing these values!  
+Images in photographs are made up of **pixels** which are tiny picture elements that color in the image. The color of a pixel is represented using the RGB (Red, Green, Blue) color model, which stores values for red, green, and blue, each ranging from 0 to 255. You can make any color by mixing these values!  
 
 Try the following Color Chooser by moving the sliders to see the RGB values for each color. What is the RGB value for black? What is the RGB value for white? What is the RGB value for purple?
 
@@ -218,6 +214,10 @@ Try the following Color Chooser by moving the sliders to see the RGB values for 
     <iframe height="600px" width="100%" style="margin-left:10%;max-width:80%" src="https://www.cssscript.com/demo/rgb-color-picker-slider/"></iframe>
 
 
+.. figure:: ../../_static/assets/img/student.jpg
+    :width: 200px
+    :align: left
+
 The following code will create a picture from a file and then loop through all the pixels in the picture. It will then change the color of any pixel that is close to white to cyan. This code and project are based on the *Picture Lab* by Dr. Barbara Ericson.
 
 .. activecode:: py-picture-project
@@ -225,7 +225,7 @@ The following code will create a picture from a file and then loop through all t
     :datafile: kitten.jpg, puppies.jpg, student.jpg
     :autograde: unittest
 
-    Run the following code to see how it changes the white background of the image. The original image is above. Can you change the color of the student's hair which is close to black? Can you change the red t-shirt to another color? You can also experiment with the files kitten.jpg and puppies.jpg.
+    Run the following code to see how it changes the white background of the image to purple/violet with high red and blue values. The original image is above. Can you write an if statement to change the color of the student's hair which is close to black? Can you change the red t-shirt to another color? You can also experiment with the files kitten.jpg and puppies.jpg.
     ~~~~
     from image import *
     
@@ -239,7 +239,8 @@ The following code will create a picture from a file and then loop through all t
         g = p.getGreen()
         b = p.getBlue()
           
-        # RGB values close to (0,0,0) are black and close to (255,255,255) for white
+        # RGB values close to (0,0,0) are black 
+        # and close to (255,255,255) for white
         if r > 230 and g > 230 and b > 230:
            # CHANGE THE IMAGE
            p.setBlue(255) 
@@ -256,8 +257,8 @@ The following code will create a picture from a file and then loop through all t
     class myTests(TestCaseGui):
 
         def test1(self):
-            self.assertNotIn("230", self.getEditorText(), "change the values and signs in the if statement")
-            self.assertNotIn("255", self.getEditorText(), "change the values in the set color statements")
+            self.assertNotIn("230", self.getEditorText(), "Change the 230 values in the if statement")
+            self.assertIn("<", self.getEditorText(), "Use < in the if statement")
 
     myTests().main() 
 
