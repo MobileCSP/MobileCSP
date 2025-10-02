@@ -40,7 +40,6 @@ Learning Activities
      <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-wifi.html">Wifi: Connecting an Android or iOS (iPhone, iPad, iPod) mobile device (tablet or smart phone) via a Wifi link.</a></li>
      <li><a href="http://appinventor.mit.edu/explore/ai2/setup-device-usb.html">USB: Connecting a mobile device via a USB cable.</a></li>
      <li><a href="http://appinventor.mit.edu/explore/ai2/setup-emulator.html">Android emulator: Using emulator software running on your computer to test your apps.</a></li>
-     <li><a href="http://ai2.appinventor.mit.edu/reference/other/genymotion.html">Genymotion Emulator </a></li>
      <li><a href="https://docs.google.com/document/d/1XBRVe9Rb8bIauJohaf-Bb-GJ-D9hVHOjoongpMu_vyA/edit" target="_blank" title="">Other emulators</a></li>
      </ul>
 
