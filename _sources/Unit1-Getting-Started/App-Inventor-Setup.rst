@@ -79,7 +79,7 @@ Learning Activities
 
      <ol>
      <li>Make sure that both your computer and your phone or tablet are connected to the same wifi.</li>
-     <li>Install the <a target="_blank" href="https://play.google.com/store/apps/details?id=edu.mit.appinventor.aicompanion3">Android MIT AI2 Companion app</a> or <a target="_blank" href="https://apps.apple.com/us/app/mit-app-inventor/id1422709355?uo=4&itscg=30200&itsct=apps_box&mt=8">iOS MIT App Inventor Companion</a> from the Play Store (or for Android <a href="http://appinv.us/companion" target="_blank">here</a> if you can't use the Play Store) on your mobile device and start it.</li>
+     <li>Install the <a target="_blank" href="https://play.google.com/store/apps/details?id=edu.mit.appinventor.aicompanion3">Android MIT AI2 Companion app</a> or <a target="_blank" href="https://apps.apple.com/us/app/mit-app-inventor/id1422709355?uo=4&itscg=30200&itsct=apps_box&mt=8">iOS MIT App Inventor Companion</a> from the Play Store.</li>
      <li>In App Inventor on your computer, click Connect and then select <i>AI Companion</i>. This will display a 6-letter code both as a barcode and as plain text. (Note: The 6-letter code will be a unique code and different from the one shown below)<p><img src="../_static/assets/img/testappselect.png">
      <p><img src="../_static/assets/img/testappcompanion.png"></p></li>
      <li>On the companion app, either type in the 6-letter code and click the “Connect to App Inventor” button or scan the barcode. You should see the app on your device!</li>
