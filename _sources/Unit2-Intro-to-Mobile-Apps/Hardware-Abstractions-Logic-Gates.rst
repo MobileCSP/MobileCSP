@@ -70,8 +70,6 @@ Learning Activities
 	<li style="display: inline"> | </li>
 	<li style="display: inline"><a href="https://www.youtube.com/watch?v=JGMtLwfxozU" target="_blank">YouTube video</a></li>
 	<li style="display: inline"> | </li>
-	<li style="display: inline"><a href="" target="_blank" title="">TeacherTube video - coming soon</a></li>
-	<li style="display: inline"> | </li>
 	<li style="display: inline"><a href="https://docs.google.com/document/d/1W_6XvtYe5uWi5_ySrKcAv3UBr6Wbop1B7rPyR7UhVLM/copy" target="_blank" title="">POGIL worksheet</a></li>
 	
 	</ul>

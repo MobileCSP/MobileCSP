@@ -125,10 +125,11 @@ Learning Activities
     </p>
     <p>There are sites that offer free audio and image files, including the following:</p>
     <ul>
-    <!--&lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://commons.wikimedia.org/wiki/Main_Page&quot;&gt;Wikimedia commons&lt;/a&gt; is a great source of free and open source media.  Any files found on its sites can be used in apps without violating copyright.&lt;/li&gt;-->
+     <li><a href="https://pexels.com/" target="_blank">Pexels</a> (free shared images)</li>
+    <li><a href="https://pixabay.com/" target="_blank">Pixabay</a> (free shared images)</li>
     <li><a href="http://images.google.com" target="_blank">Google Image Search</a>: search for an image, then on the results page, select Tools. Under the Usage Rights drop-down, select Creative Commons Licenses.</li>
     <li><a href="http://soundbible.com/royalty-free-sounds-1.html" target="_blank">Sound Bible</a> (free sound files)</li>
-    <li><a href="https://www.youtube.com/audiolibrary/soundeffects" target="_blank">Youtube Sound Effects</a> (free sound files)</li>
+    <li><a href=" https://www.youtube.com/c/AudioLibrarySoundEffects" target="_blank">Youtube Sound Effects</a> (free sound files)</li>
     <li><a href="http://www.freesound.org/">Freesound.org</a> (requires registration) </li>
     <li><a href="http://www.freesfx.co.uk/">Freesfx.co.uk</a> (requires registration)</li>
     </ul>
@@ -148,8 +149,6 @@ Learning Activities
         Audacity</a> is a free and open source sound file editor for all platforms.
       </li>
     <li>You can also downsize sound files using the free online web app <a href="http://cutmp3.net/" target="_blank">CutMp3.net</a>
-    </li>
-    <li><a href="www.mp3cut.net">Another online web app you can use to cut your sound files is mp3cut.net</a>
     </li>
     <li>If your video mp4 file is too big, try uploading to a youtube channel and then click Manage to download as a much smaller mp4 file. </li>
     </ul>

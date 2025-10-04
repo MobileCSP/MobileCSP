@@ -224,7 +224,7 @@ Reflection: For Your Portfolio
 
     <p><div class="yui-wk-div" id="portfolio">
     <p>Answer the following portfolio reflection questions as directed by your instructor. Questions are also available in this <a href="https://docs.google.com/document/d/1YIk02mn6Yc_bUiQGtaoEZ6IFrFapYfu0KAzf2BpJFjk/copy" target="_blank">Google Doc</a> - you will be prompted to make your own editable copy.</p>
-    <p>If you are using a Google Sites portfolio, see the videos on the <a href="https://sites.google.com/site/mobilecspportfoliohelp/home/portfolio-help" target="_blank">portfolio help page</a> on how to embed your google document in your web page.</p>
+    <p>If you are using a Google Sites portfolio, you can Insert/Embed your google document in a web page in your portfolio.</p>
     <div style="align-items:center;"><iframe class="portfolioQuestions" scrolling="yes" src="https://docs.google.com/document/d/e/2PACX-1vRJBaN4pD528RxR-f4Kfc3bPf2VCRycRqFhHqg6OAQekhiFNRpRZ0t4LKxJ3wcTn82Vl8QKmJMDnyw9/pub?embedded=true" style="height:30em;width:100%"></iframe></div>
     </div>
     </img></div>
