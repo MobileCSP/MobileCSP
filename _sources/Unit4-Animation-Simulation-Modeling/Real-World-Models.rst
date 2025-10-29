@@ -110,7 +110,7 @@ Learning Activities
     <td>Keeps track of the teams progress and assesses its performance.</td>
     </tr>
     </tbody></table>
-    <p>This simulation of <a href="http://www.shodor.org/interactivate/activities/RabbitsAndWolves/" target="_blank"><b>rabbits and wolves</b></a> 
+    <p>This simulation of <a href="https://shodor-education.github.io/interactivate/activities/RabbitsAndWolves/" target="_blank"><b>rabbits and wolves</b></a> 
         shows how nature attempts to stay balanced. Read the Learner's Tab about how the simulation works and then complete 
         the following activities. (Note that this simulator works best in the Firefox browser).</p>
     <ol>
