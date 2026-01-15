@@ -130,7 +130,7 @@ Learning Activities
     </tbody></table>
     <p>
       In this activity, 
-      you will use the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and <span class="hover vocab yui-wk-div" data-id='traceroute'>traceroute</span> utilities at an online network tools website (<a href="http://networktools.nl/ping" target="_blank">http://networktools.nl/ping</a> or <a href="https://www.broadbandsearch.net/ping" target="_blank">https://www.broadbandsearch.net/ping</a> or <a href="http://network-tools.com/" target="_blank">network-tools.com</a>) to measure the latency and observe trace routes to answer the following question. For traceroute, you may also use a href="https://traceroute-online.com/" target="_blank">https://traceroute-online.com/</a> to see a map of the hops in the route.
+      you will use the <span class="hover vocab yui-wk-div" data-id='ping'>ping</span> and <span class="hover vocab yui-wk-div" data-id='traceroute'>traceroute</span> utilities at an online network tools website (<a href="http://networktools.nl/ping" target="_blank">http://networktools.nl/ping</a> or <a href="https://www.broadbandsearch.net/ping" target="_blank">https://www.broadbandsearch.net/ping</a>) to measure the latency and observe trace routes to answer the following question. For traceroute, you may also use <a href="https://traceroute-online.com/" target="_blank">https://traceroute-online.com/</a> to see a map of the hops in the route.
       </p><blockquote>
     <b>Does geographical distance between the source and the destination 
           on the network affect latency?
