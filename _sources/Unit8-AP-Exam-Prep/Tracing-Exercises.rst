@@ -7,7 +7,7 @@ Tracing Pseudocode Exercises
        
 .. raw:: html
     
-	
+     <div class="MCSP-lesson-content">	
 	<h3 id="est-length">Time Estimate: 45 minutes</h3>
 
 Introduction and Goals
@@ -237,4 +237,5 @@ Reflection: For Your Portfolio
 	
 	
 	</ol>
+	</div>
 	</div>
