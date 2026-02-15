@@ -8,7 +8,7 @@ Debugging Pong (Optional)
 .. raw:: html
 
 	
-	
+	<div class="MCSP-lesson-content">	
 	<h3 id="est-length"><b>Time Estimate: 45 minutes</b></h3>
 	
 Introduction
@@ -68,4 +68,5 @@ Reflection: For Your Portfolio
 	 <ol>
 	   <li>For each of the 3 bugs in the Pong game, explain what the bug was, how to fix it, and the type of error (semantic or syntax).</li>
 	 </ol>
+	</div>
 	</div>
