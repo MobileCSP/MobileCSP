@@ -1,0 +1,1 @@
+// Empty deps.js to prevent 404 error

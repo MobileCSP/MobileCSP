@@ -1,6 +1,5 @@
 <html>
 
-<!-- Mirrored from course.mobilecsp.org/mobilecsp/assets/lib/quizly/blockly.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Feb 2021 01:25:30 GMT -->
 <head>
   <meta charset="utf-8">
   <!-- NOTE:  Don't change this Title -->
@@ -11,24 +10,47 @@
   <!-- Loads the quizzes into the the global variable 'quizzes', used below  -->
   <!--   in the initBlockly() function.                                      -->
   <script>
-     var GLOBAL_DEBUG = false;   // Sets DEBUG a quizme*.js files.
+     var GLOBAL_DEBUG = true;   // Sets DEBUG a quizme*.js files.
      var GLOBAL_ED_X = false; // This is not the edX version.
+     
+     //window.BlocklyDragSurfaceSvg = true;
   </script>
   <script type="text/javascript" src="quizzes.js"></script>
 
   <!-- These compressed files are built with plovr.config: -->
   <!-- java -jar plovr-eba786b34df9.jar build plovr.config -->
-  <script type="text/javascript" src="all_blockly.js"></script>
-  <script type="text/javascript" src="all_appinv.js"></script>
-  <script type="text/javascript" src="all_quizly.js"></script>
+  <!--<script type="text/javascript" src="all_blockly.js"></script>-->
+  <!-- Load messages first  from app inventor -->
+  <script type="text/javascript" src="messages.js"></script>
+  <!-- New file created from npm run build for newer app inventor blockly-editor -->
+  <script type="text/javascript" src="blockly-all.js"></script>
 
-  <!-- Because plovr renames functions and variables, which causes 
-       eval(fn) to fail for evaluating function problems, we include
-       quizme-helper.js separately from the rest of Quizly code. -->
-  <script type="text/javascript" src="quizme-helper.js"></script>
 
-<!-- Got to document why this is not needed for GCB? -->
-<!--  <script type="text/javascript" src="./jquery-1.9.1.min.js"></script> -->
+ <!-- We think newer blockly-all.js includes appinventor code 
+ <script type="text/javascript" src="all_appinv.js"></script> -->
+
+
+<!---  <script type="text/javascript" src="all_quizly.js"></script> -->
+<!-- quizme-helper defines some db vars the others need -->
+<script type="text/javascript" src="quizme-helper.js"></script>
+<!-- Let's try including all quizly js files and update them to new Blockly API -->
+<script type="text/javascript" src="quizme-javascript/javascript.js"></script>
+<script type="text/javascript" src="quizme-javascript/logic.js"></script>
+<script type="text/javascript" src="quizme-javascript/control.js"></script>
+<script type="text/javascript" src="quizme-javascript/procedures.js"></script>
+<script type="text/javascript" src="quizme-javascript/math.js"></script>
+<script type="text/javascript" src="quizme-javascript/lists.js"></script>
+<script type="text/javascript" src="quizme-javascript/text.js"></script>
+<script type="text/javascript" src="quizme-javascript/variables.js"></script>
+<script type="text/javascript" src="quizme-javascript/componentblock.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme-components.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme-component-types.js"></script>
+<script type="text/javascript" src="quizme-javascript/makequiz-helper.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme-eval.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme-overrides.js"></script>
+<script type="text/javascript" src="quizme-javascript/quizme-initblocklyeditor.js"></script>
+
 
   <style>
     html, body {
@@ -41,6 +63,8 @@
       height: 100%;
       width: 100%;
     }
+
+
   </style>
 
   <script>
@@ -62,7 +86,7 @@
     <input id="ac_input_text" />
   </p>
  </div>
-</body>
 
-<!-- Mirrored from course.mobilecsp.org/mobilecsp/assets/lib/quizly/blockly.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Feb 2021 01:25:32 GMT -->
+
+</body>
 </html>
