@@ -20,6 +20,10 @@
 /**
  * @fileoverview Utility functions for managing quizzes in browser.
  * @author ram8647@gmail.com (Ralph Morelli)
+ * Feb. 2026 updated with new Blockly 
+ * @author Beryl Hoffman (hoffmanb@elms.edu)
+ * @author Joe Mazzone
+ * 
  */
 
 
@@ -32,7 +36,7 @@
  *  Xmltemplate is created by: 
  *     .. using the browser's developer console. Manually place
  *     the correct blocks in the workspace and then, in the console, use:
- *     Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.mainWorkspace))
+ *     Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace()))
  *     to get the Xml code needed in the function.
 
  * Xmlgenerator is created by first writing the function in Javascript and
@@ -43,7 +47,7 @@
  *  in the blocks editor and then open the Developer console and type
  *  the command:
  * 
- * Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.mainWorkspace))
+ * Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace()))
  *
  * NOTE: The limitation here is that the solution must exactly match
  *     the user's input.
@@ -56,7 +60,12 @@
 
 'use strict';
 
+
 //goog.require('Blockly.Quizme');
+
+// Blockly.Quizme is fully initialized by quizme.js, which loads AFTER this file.
+// Create the namespace early so property assignments below don't crash.
+Blockly.Quizme = Blockly.Quizme || {};
 
 var ED_X = GLOBAL_ED_X;  // GLOBAL_ED_X set in blockly.html;
 var DEBUG = GLOBAL_DEBUG;   // GLOBAL_DEBUG set in blockly,html
@@ -97,19 +106,396 @@ var maindocument = parent.document;
 var MAX_TRIES = 6;
 var answer_tries = 0;     //  How many wrong answers
 
-Blockly.hello = function(command, quizname) {
-  if (DEBUG) console.log("RAM: Blockly says " + command);
-  if (command == 'submit')
-    submitNewToggle();
-  else if (command == 'hint') 
-    giveHint();
-  else if (command == 'showquiz')
-    showQuiz(quizname);
-  else if (command == 'submitoneshot')
-    submitOneShot();
-  else if (command == 'showjavascript')
-    showJavaScript();
+
+var dummyProcedureMap = {
+  // The blocks call this to see all available procedures for dropdowns
+  getProcedures: function() { return []; },
+  
+  // The blocks call this to get the menu items for the right-click menu
+  getMenuItems: function() { return []; },
+  
+  // Used to find a specific procedure by ID or Name
+  getProcedure: function(idOrName) { return null; },
+   deleteProcedure: function() {},
+
+  // --- NEW: These are required by the modern Observer pattern ---
+  add: function(procedure) { 
+    if (DEBUG) console.log("RAM: Procedure added to map");
+  },
+  remove: function(procedure) { 
+    if (DEBUG) console.log("RAM: Procedure removed from map");
+  },
+  clear: function() {},
+  
+  // The engine often checks for an "Observable" event system
+  fireChangeEvent: function() {
+    if (DEBUG) console.log("RAM: ProcedureMap change event fired");
+  }
+};
+
+// Fix "Component Database" Crash (Button/Player errors)
+// The Flyout workspace needs a component database to render component blocks.
+// We patch the Workspace prototype to return a dummy DB if a real one is missing.
+// --- SHIM START ---
+// --- UPDATED ROBUST SHIM ---
+// --- THE "CLICK" ERROR FIX ---
+// Use 'var' so it is globally accessible to the Blockly core
+
+var dummyComponentDb = {
+  getComponentType: function(typeName) {
+    if (Blockly.ComponentTypes && Blockly.ComponentTypes[typeName]) {
+      return Blockly.ComponentTypes[typeName];
+    }
+    return { eventDictionary: {}, methodDictionary: {}, properties: {} };
+  },
+  getEventForType: function(typeName, eventName) {
+    var type = this.getComponentType(typeName);
+    if (type && type.eventDictionary && type.eventDictionary[eventName]) {
+      return type.eventDictionary[eventName];
+    }
+    return { name: eventName, parameters: [], typeName: typeName };
+  },
+  getMethodForType: function(typeName, methodName) {
+    var type = this.getComponentType(typeName);
+    if (type && type.methodDictionary && type.methodDictionary[methodName]) {
+      return type.methodDictionary[methodName];
+    }
+    return { name: methodName, parameters: [], typeName: typeName, returnType: 'any' };
+  },
+   // NEW: The engine uses this to populate property dropdowns
+  getSetterNamesForType: function(typeName) {
+    var type = this.getComponentType(typeName);
+    return (type && type.setPropertyList) ? type.setPropertyList : [];
+  },
+
+  getGetterNamesForType: function(typeName) {
+    var type = this.getComponentType(typeName);
+    return (type && type.getPropertyList) ? type.getPropertyList : [];
+  },
+
+  getPropertyForType: function(typeName, propName) {
+  var type = this.getComponentType(typeName);
+  if (!type || !type.properties) return { name: propName, type: 'any' };
+
+  // 1. Direct match (Case Sensitive)
+  if (type.properties[propName]) {
+    return type.properties[propName];
+  }
+
+  // 2. Case-Insensitive Match (e.g., BackgroundColor vs backgroundColor)
+  var searchName = propName.toLowerCase();
+  for (var key in type.properties) {
+    if (key.toLowerCase() === searchName) {
+      return type.properties[key];
+    }
+  }
+
+  // 3. Fallback: Return a dummy object so the renderer doesn't crash
+  if (DEBUG) console.warn("RAM: Property fallback used for: " + typeName + "." + propName);
+  return {
+    name: propName,
+    type: 'any',
+    rw: 'read-write'
+  };
+},
+  getType: function(instanceName) {
+    var typeName = instanceName ? instanceName.replace(/[0-9]/g, '') : '';
+    if (Blockly.ComponentTypes && Blockly.ComponentTypes[instanceName]) {
+      return Blockly.ComponentTypes[instanceName];
+    } else if (Blockly.ComponentTypes && Blockly.ComponentTypes[typeName]) {
+      return Blockly.ComponentTypes[typeName];
+    }
+    return null;
+  },
+  getComponentNamesByType: function(typeName) {
+    return [[typeName + "1", typeName + "1"]];
+  },
+
+  // Internationalization stubs - signatures must match how blockly-all.js calls them
+  // Name functions: called with 1 arg (the name string)
+  getInternationalizedPropertyName: function(propName) { return propName; },
+  getInternationalizedEventName: function(name) { return name; },
+  getInternationalizedMethodName: function(name) { return name; },
+  getInternationalizedParameterName: function(name) { return name; },
+  getInternationalizedOptionName: function(key, name) { return name; },
+  // Description functions: called with 3 args (typeName, memberName, description)
+  getInternationalizedEventDescription: function(typeName, eventName, desc) { return desc || eventName || typeName; },
+  getInternationalizedMethodDescription: function(typeName, methodName, desc) { return desc || methodName || typeName; },
+  getInternationalizedPropertyDescription: function(typeName, propName, desc) { return desc || propName || typeName; },
+  getInternationalizedOptionListTag: function(tag) { return tag; },
+  getInternationalizedComponentType: function(typeName) { return typeName; },
+  getOptionList: function(key) { return { options: [], tag: "" }; },
+  hasType: function(type) {
+    return !!(Blockly.ComponentTypes && Blockly.ComponentTypes[type]);
+  },
+  getFilter: function(key) { return []; },
+  getComponentTypes: function() {
+    if (!Blockly.ComponentTypes) return [];
+    return Object.keys(Blockly.ComponentTypes).map(function(k) { return [k, k]; });
+  },
+  hasInstance: function(name) { return true; 
+  }
+};
+
+
+// CRITICAL: Global assignments for blockly-all.js
+Blockly.ComponentDatabase = dummyComponentDb;
+// Force some
+Blockly.getComponentDatabase = function() { return dummyComponentDb; };
+
+// App Inventor version of Blockly often looks here:
+if (!Blockly.common) Blockly.common = {};
+Blockly.common.getComponentDatabase = function() { return dummyComponentDb; };
+
+// And sometimes even here:
+window.getComponentDatabase = function() { return dummyComponentDb; };
+
+// 2. NOW APPLY THE SHIMS (The code that was crashing before)
+Blockly.getProcedureMap = function() { return dummyProcedureMap; };
+Blockly.getProcedureManager = function() { return dummyProcedureMap; };
+Blockly.ProcedureMap = dummyProcedureMap;
+
+
+
+
+/**
+ * THE REPAIR: Ensures any object (Block or Workspace) that needs the 
+ * component database can find it.
+ */
+(function() {
+    // 1. Shim the Workspace
+    if (typeof Blockly !== 'undefined' && Blockly.Workspace) {
+        Blockly.Workspace.prototype.getComponentDatabase = function() {
+            return dummyComponentDb;
+        };
+    }
+
+    // 2. Shim the Block - THIS FIXES 'getTopWorkspace' crashes
+    if (typeof Blockly !== 'undefined' && Blockly.Block) {
+        Blockly.Block.prototype.getComponentDatabase = function() {
+            return dummyComponentDb;
+        };
+    }
+
+    // 3. Global aliases
+    if (typeof Blockly !== 'undefined') {
+        Blockly.getComponentDatabase = function() { return dummyComponentDb; };
+        Blockly.ComponentDatabase = dummyComponentDb;
+        if (Blockly.common) {
+            Blockly.common.getComponentDatabase = function() { return dummyComponentDb; };
+        }
+    }
+
+    // Stub App Inventor admin check used by context menu items
+    if (!window.parent.BlocklyPanel_checkIsAdmin) {
+        window.parent.BlocklyPanel_checkIsAdmin = function() { return false; };
+    }
+
+    if (typeof Blockly !== 'undefined' && Blockly.Workspace) {
+        // SHIM THE PROCEDURE DATABASE
+        // This prevents the 'getMenuItems' crash on procedure call blocks
+        Blockly.Workspace.prototype.getProcedureMap = function() {
+            return {
+                getProcedures: function() { return []; },
+                getMenuItems: function() { return []; }, // THIS FIXES YOUR ERROR
+                getProcedure: function() { return null; }
+            };
+        };
+
+        // Some versions of blockly-all use this name instead:
+        Blockly.Workspace.prototype.getProcedureManager = function() {
+            return this.getProcedureMap();
+        };
+    }
+})();
+
+
+// new combined blockly.hello
+
+Blockly.hello = function(arg1, arg2) {
+  var commands = ['submit', 'hint', 'showquiz', 'submitoneshot', 'showjavascript'];
+  
+  // Check if arg1 is a command
+  if (commands.indexOf(arg1) !== -1) {
+    var command = arg1;
+    // FIX: If arg2 is missing, use the global quiz name
+    var quizname = arg2 || Blockly.Quizme.quizName; 
+    
+    if (DEBUG) console.log("RAM: Blockly.hello command: " + command + " for " + quizname);
+    
+    if (command == 'submit')
+      submitNewToggle(quizname);
+    else if (command == 'hint') 
+      giveHint();
+    else if (command == 'showquiz')
+      showQuiz(quizname);
+    else if (command == 'submitoneshot')
+      submitOneShot();
+    else if (command == 'showjavascript')
+      showJavaScript();
+  } else {
+    // It's not a command, so treat arg1 as the quizname (from dropdown)
+    if (DEBUG) console.log("RAM: Blockly.hello routing to showQuiz: " + arg1);
+    showQuiz(arg1);
+  }
+};
+
+// This makes the shim available to the internal blockly-all.js logic
+window.getComponentDatabase = function() { return dummyComponentDb; };
+Blockly.getComponentDatabase = function() { return dummyComponentDb; };
+Blockly.ComponentDatabase = dummyComponentDb;
+
+
+// --- SHIM START: FIX GENERATOR & VARIABLES ---
+
+// 1. Polyfill Blockly.mainWorkspace for old code compatibility
+if (!Blockly.mainWorkspace) {
+    Object.defineProperty(Blockly, 'mainWorkspace', {
+        get: function() { return Blockly.common.getMainWorkspace(); },
+        enumerable: true,
+        configurable: true
+    });
 }
+
+// 2. FULL OVERRIDE of allVariables
+// The old function in module_quizly.js crashes when passed a Workspace.
+// We replace it with a robust version that handles both Workspaces and Blocks.
+Blockly.Variables.allVariables = function(root) {
+    var target = root || Blockly.common.getMainWorkspace();
+    var variables = [];
+    var blocks = [];
+
+    // A. Determine how to get the list of blocks
+    if (target.getAllBlocks) {
+        // It is a Workspace (Modern or Old)
+        blocks = target.getAllBlocks();
+    } else if (target.getDescendants) {
+        // It is a Block
+        blocks = target.getDescendants();
+    } else if (target.getTopBlocks) {
+        // Fallback for some Workspace types
+        // true = include nested blocks
+        blocks = target.getTopBlocks(true); 
+    }
+
+    // B. Iterate blocks to find variable names
+    for (var i = 0; i < blocks.length; i++) {
+        var block = blocks[i];
+        if (block.getVars) {
+            var blockVars = block.getVars();
+            for (var j = 0; j < blockVars.length; j++) {
+                var varName = blockVars[j];
+                // Add unique variable names only
+                if (variables.indexOf(varName) === -1) {
+                    variables.push(varName);
+                }
+            }
+        }
+    }
+    return variables;
+};
+
+// 3. Fix workspaceToCode crash (Handle missing argument)
+// NOTE: Blockly.JavaScript is created by javascript.js which loads AFTER this file.
+// Guard to prevent crashing the entire script. All callers already pass workspace explicitly.
+if (Blockly.JavaScript) {
+  var originalWorkspaceToCode = Blockly.JavaScript.workspaceToCode;
+  Blockly.JavaScript.workspaceToCode = function(opt_workspace) {
+      var workspace = opt_workspace || Blockly.common.getMainWorkspace();
+      if (!workspace || typeof workspace.getTopBlocks !== 'function') {
+          workspace = Blockly.common.getMainWorkspace();
+      }
+      return originalWorkspaceToCode.call(this, workspace);
+  };
+
+  // 4. Fix "Deprecated call..." (CORRECTED ORDER)
+  var originalJsInit = Blockly.JavaScript.init;
+  Blockly.JavaScript.init = function(opt_workspace) {
+    var workspace = opt_workspace || Blockly.common.getMainWorkspace();
+    if (originalJsInit) {
+        originalJsInit.call(this, workspace);
+    }
+    if (this.nameDB_ && workspace) {
+      this.nameDB_.setVariableMap(workspace.getVariableMap());
+    }
+  };
+}
+
+// 5. Flydown support: the disable-override has been removed.
+// Instead, LexicalVariablesPlugin.init(workspace) is called in the
+// Blockly.inject wrapper below to properly create the Flydown.
+
+// 6. Fix "Dropdowns not setting value" (Permissive Validation)
+// This forces dropdowns to accept any value, even if the validator fails.
+if (Blockly.FieldDropdown) {
+    Blockly.FieldDropdown.prototype.doClassValidation_ = function(newValue) {
+        if (newValue === null || newValue === undefined) return null;
+        // Force acceptance of the value
+        return newValue;
+    };
+}
+
+
+
+/**
+ * NEW LOGIC: This intercepts the workspace creation to ensure 
+ * the component database is ALWAYS present.
+ */
+(function() {
+  // If Blockly is already loaded
+  if (typeof Blockly !== 'undefined') {
+    // 1. Try prototype injection again with more targets
+    const targets = [Blockly.Workspace, Blockly.WorkspaceSvg, Blockly.WorkspaceHeadless];
+    targets.forEach(t => {
+      if (t && t.prototype) {
+        t.prototype.getComponentDatabase = function() { return dummyComponentDb; };
+      }
+    });
+
+    // 2. Wrap the injection method to catch new workspaces
+    const originalInject = Blockly.inject;
+    Blockly.inject = function(container, options) {
+      const workspace = originalInject.call(this, container, options);
+      // Manually attach to the instance immediately
+      workspace.getComponentDatabase = function() { return dummyComponentDb; };
+      // Initialize the procedure database (required by procedure call blocks)
+      if (Blockly.ProcedureDatabase && !workspace.procedureDb_) {
+        workspace.procedureDb_ = new Blockly.ProcedureDatabase(workspace);
+      }
+      // Initialize the LexicalVariablesPlugin to create the Flydown
+      try {
+        var lexPlugin = (typeof LexicalVariablesPlugin !== 'undefined') ? LexicalVariablesPlugin
+                      : (typeof top !== 'undefined' && top.LexicalVariablesPlugin) ? top.LexicalVariablesPlugin
+                      : null;
+        if (lexPlugin && lexPlugin.init && !workspace.flydown_) {
+          lexPlugin.init(workspace);
+        }
+      } catch(flydownErr) {
+        console.error('Flydown init failed:', flydownErr);
+      }
+      return workspace;
+    };
+  }
+})();
+
+// Bridge the old generator name to the new one
+if (!Blockly.JavaScript && typeof javascriptGenerator !== 'undefined') {
+    Blockly.JavaScript = javascriptGenerator;
+} else if (!Blockly.JavaScript && Blockly.Generator && typeof Blockly.Generator.get === 'function' && Blockly.Generator.get('JavaScript')) {
+    Blockly.JavaScript = Blockly.Generator.get('JavaScript');
+}
+
+// Safety check for workspaceToCode specifically
+if (Blockly.JavaScript) {
+    if (DEBUG) console.log("RAM: JavaScript generator linked successfully.");
+} else {
+    console.error("RAM: ERROR - JavaScript generator NOT found. Checks may fail.");
+}
+// --- SHIM END ---
+
+
+
+
 
 
 
@@ -148,7 +534,7 @@ function createBogusParentFunctions() {
     } else {
       Blockly.WarningHandler.hideWarnings();
     }
-    Blockly.mainWorkspace.warningIndicator.updateWarningToggleText();
+    Blockly.getMainWorkspace().warningIndicator.updateWarningToggleText();
     return;
   }
 }
@@ -161,7 +547,7 @@ function createBogusParentFunctions() {
  * @param arglist, the list of GET args passed, e.g., 'quizname=name&selector=hidden&backpack=hidden
  */
 function initQuizme(quizname, quizmepath, arglist, quizdata) {
-  if (DEBUG) console.log("RAM initQuizme quizdata " + quizdata);
+  //if (DEBUG) console.log("RAM initQuizme quizdata " + quizdata);
   if (DEBUG) console.log("RAM: initializing ... quizname= " + quizname + " path=" + quizmepath + " arglist = " + arglist);
 
   createBogusParentFunctions();   // To handle translation
@@ -188,7 +574,7 @@ function initQuizme(quizname, quizmepath, arglist, quizdata) {
 
   // Do we want to hide the backpack?
   if (Blockly.Quizme.options['backpack'] == 'hidden') {
-    var bp = Blockly.mainWorkspace.backpack;
+    var bp = Blockly.getMainWorkspace().backpack;
     if (bp) {
       bp.svgGroup_.style.visibility="hidden"
     }
@@ -249,8 +635,12 @@ function initQuizme(quizname, quizmepath, arglist, quizdata) {
   // Initialize the structures that handles scoped variables
   Blockly.BlocklyEditor.startquizme();
   
-  // Display a quiz question
-  showQuiz(quizname);
+  // Display a quiz question with the most data we have
+  //showQuiz(quizdata || quizname);
+  // First question not loading, so we add a slight delay
+  setTimeout(function() {
+    showQuiz(quizdata || quizname);
+  }, 100);
 }
 
 /**
@@ -332,9 +722,9 @@ function showJavaScript() {
     if (answerType == "xml_blocks") {
 	window.parent.Alert.render("Sorry, Javascript code is not available \nfor this problem.");
     } else {
-      Blockly.JavaScript.init();
-      var  blocks  = Blockly.mainWorkspace.topBlocks_;
-      var code = Blockly.JavaScript.workspaceToCode('JavaScript');  
+      Blockly.JavaScript.init(Blockly.common.getMainWorkspace());
+      var  blocks  = Blockly.getMainWorkspace().getTopBlocks(false);
+      var code = Blockly.JavaScript.workspaceToCode(Blockly.common.getMainWorkspace());  
       code = parseCode(code);
 
       console.log(code);
@@ -357,10 +747,45 @@ function showJavaScript() {
  * 
  * TODO: This function is too long. Break it up. 
  */
-function showQuiz(quizname) {
-  if (DEBUG) console.log("RAM: showQuiz " + quizname);
+/**
+ * showQuiz handles the display logic.
+ * @param {String|Object} quizIdentifier - Can be a name (String) or the full data (Object)
+ */
+function showQuiz(quizIdentifier) {
+  if (DEBUG) console.log("RAM: showQuiz() called with: ", quizIdentifier);
 
-  Blockly.mainWorkspace.clear();  // Do this first, before setting up built-ins and components.
+  var quizdata;
+  var quizname;
+
+  // 1. DETERMINE WHAT WAS PASSED
+  if (typeof quizIdentifier === 'string') {
+    quizname = quizIdentifier;
+    quizdata = Blockly.Quizme[quizIdentifier];
+  } else if (quizIdentifier && typeof quizIdentifier === 'object') {
+    quizdata = quizIdentifier;
+    // Try to find the name from the object if possible
+    quizname = quizdata.name || Blockly.Quizme.quizName; 
+  }
+
+  // 1.5 RE-SYNC: If the selector changed the quizname, we need the new quizdata
+  if (quizname && (!quizdata || quizdata !== Blockly.Quizme[quizname])) {
+    quizdata = Blockly.Quizme[quizname];
+  }
+
+  // 2. ERROR CHECK
+  if (!quizdata) {
+    console.error("showQuiz: Could not find quiz data for: ", quizIdentifier);
+    return;
+  }
+
+  // 3. SET GLOBALS (Required by renderQuiz's UI logic)
+  // Your renderQuiz function looks at Blockly.Quizme.quizName to update the UI
+  if (typeof quizIdentifier === 'string') {
+     Blockly.Quizme.quizName = quizIdentifier;
+  }
+
+
+  Blockly.getMainWorkspace().clear();  // Do this first, before setting up built-ins and components.
 
   var quiznames = Blockly.Quizme.quiznames;
 
@@ -414,10 +839,24 @@ function showQuiz(quizname) {
       Blockly.Quizme.VariableMappings = Blockly.Quizme[quizname].VariableMappings 
         = generateInstanceMappings(quizname, Blockly.Quizme);
     }
+    // Update the question for this quiz
+    Blockly.Quizme.question = quiz.question;
   }
 
   keepers = Blockly.Quizme[quizname].built_ins;
   components = Blockly.Quizme[quizname].components;
+
+  // NEW: Force the components to register with Blockly before customizing the toolbox
+  if (Blockly.Quizme.inputFromComponentsArray) {
+    Blockly.Quizme.inputFromComponentsArray(); 
+    if (DEBUG) console.log("RAM: Components re-initialized for toolbox.");
+  }
+
+  // This forces the component types to be parsed from JSON into Blockly.ComponentTypes
+  if (Blockly.Quizme.inputFromComponentsArray) {
+      Blockly.Quizme.inputFromComponentsArray();
+  }
+  
   customizeQuizmeLanguage(quizname, keepers, components);
 
   if (DEBUG) console.log("RAM: quizname = " + quizname);
@@ -430,6 +869,15 @@ function showQuiz(quizname) {
       button.innerHTML = "Submit";
     }
   }
+  // Clear previous quiz's hint and feedback when switching questions
+  var hintEl = maindocument.getElementById('hint_html');
+  if (hintEl) hintEl.innerHTML = '';
+  var resultEl = maindocument.getElementById('quiz_result');
+  if (resultEl) resultEl.innerHTML = '&nbsp;';
+  var link_html = maindocument.getElementById('link_html');
+  if (link_html) link_html.innerHTML = "";
+  answer_tries = 0;
+
   Blockly.Quizme.quizName = quizname;
   Blockly.Quizme.description = Blockly.Quizme[quizname].description;
   Blockly.Quizme.question_type = Blockly.Quizme[quizname].problem_type;
@@ -453,14 +901,14 @@ function showQuiz(quizname) {
     if (DEBUG) console.log("RAM: xml= " + xml);
   }
 
-  Blockly.Quizme.xml = Blockly.Xml.textToDom(xml);    
+  Blockly.Quizme.xml = Blockly.utils.xml.textToDom(xml);    
 
-  renderQuiz(); 
+  renderQuiz(quizdata); 
 
   // For boolean and numeric answer types, the solution has to be
   //  calculated after the blocks are rendered.
   if (Blockly.Quizme.answerType == 'boolean' || Blockly.Quizme.answerType == EVAL_EXPR) {
-    var block = Blockly.mainWorkspace.topBlocks_[0];
+    var block = Blockly.getMainWorkspace().getTopBlocks(false)[0];
     Blockly.Quizme.solution = "" + Blockly.Quizme.eval(block);
   }
 }
@@ -510,27 +958,46 @@ function initQuizmeLanguage() {
  */
 function initToolboxBuiltins(language, categories) {
   for (var propname in language) {
-    if (DEBUG) console.log("Adding to Blockly.languageTree " + propname);
-
     if (propname == 'Utilities' || TOPLEVEL_BLOCKS.indexOf(propname) != -1)
       continue;
 
-    // Use a tempWorkspace so that procedure def blocks are not set to visible.
+    // 1. Create a workspace with a stubbed WarningHandler
     var tempWorkspace = new Blockly.Workspace();
-    tempWorkspace.svgBlockCanvas_ = Blockly.mainWorkspace.getCanvas();
-    var blk = new Blockly.Block.obtain(tempWorkspace, propname);
+    tempWorkspace.getWarningHandler = function() {
+      return { checkErrors: function() { return []; }, checkDisposedBlock: function() {} };
+    };
+    tempWorkspace.getComponentDatabase = function() { return dummyComponentDb; };
 
-    // If this block has a category, append the category name to category list.
+    // 2. SAFETY: Override the Block constructor's behavior for this specific instance
+    // We use workspace.newBlock if available, otherwise manual creation
+    var blk;
+    try {
+      // Manually inject the method into the Prototype briefly if needed, 
+      // or attach it to the instance immediately after 'new'
+      blk = new Blockly.Block(tempWorkspace, propname);
+      
+      // FIX: Manually attach the missing method to the instance
+      blk.getTopWorkspace = function() { return tempWorkspace; };
+      blk.getComponentDatabase = function() { return dummyComponentDb; };
+      
+    } catch (e) {
+      // If it crashed during 'new', we have to catch it and try a different way
+      if (DEBUG) console.warn("RAM: Block " + propname + " failed init, forcing methods.");
+      // Some versions of blockly-all require the method on the prototype
+      Blockly.Block.prototype.getTopWorkspace = function() { return this.workspace; };
+      blk = new Blockly.Block(tempWorkspace, propname);
+    }
+
     var catname = blk['category'];
     if (catname) {
       var category = categories[catname];
-      if (!category) {            // If no such category yet
-        category = "";
-        categories[catname] = category; // Start one, initially blank
-      }
+      if (!category) { category = ""; categories[catname] = category; }
       category = category.concat("<block type='" + propname + "'></block>");
       categories[catname] = category;
     }
+    
+    // Dispose safely with the warning handler shim active
+    blk.dispose();
   }
 }
 
@@ -603,7 +1070,7 @@ function initToolboxLanguageTree(language, components) {
     treeString = treeString.concat("<category name='" + cat + "'>" + categories[cat] + "</category>");
   }
   treeString = treeString.concat("</xml>");
-  return Blockly.Xml.textToDom(treeString);
+  return Blockly.utils.xml.textToDom(treeString);
 }
 
 /**
@@ -665,12 +1132,13 @@ function customizeQuizmeLanguage(quizname, keepers, components) {
   //  Blockly.Quizme.addComponents(components);
     
   // Delete the current toolbox tree (svg element) from the webpage.
-  var html = Blockly.Toolbox.HtmlDiv;
+  /* Commented out because errors in 2026
+  var html = Blockly.getMainWorkspace().toolbox.HtmlDiv;
   var children = html.childNodes;
   if (children[1])
     children[1].parentNode.removeChild(children[1]);
-
-  Blockly.Toolbox.init();
+ */
+  Blockly.getMainWorkspace().updateToolbox(Blockly.languageTree);
 }
 
 /**
@@ -688,8 +1156,10 @@ function resetBlocklyLanguage() {
     block.setTooltip("");
   }
 
+  if (AI.Utilities && AI.Utilities.YailTypeToBlocklyType) 
+
   //  Blockly.Blocks.YailTypeToBlocklyTypeMap =
-  Blockly.Blocks.Utilities.YailTypeToBlocklyTypeMap =
+  AI.Utilities.YailTypeToBlocklyTypeMap =
     {
         'number':{input:"Number",output:["Number","String"]},
         'text':{input:"String",output:["Number","String"]},
@@ -703,9 +1173,10 @@ function resetBlocklyLanguage() {
     }
 
   //   Blockly.Blocks.YailTypeToBlocklyType = function(yail,inputOrOutput) {
-   Blockly.Blocks.Utilities.YailTypeToBlocklyType = function(yail,inputOrOutput) {
+  if (AI.Utilities && AI.Utilities.YailTypeToBlocklyType) 
+  AI.Utilities.YailTypeToBlocklyType = function(yail,inputOrOutput) {
      var inputOrOutputName = (inputOrOutput == Blockly.Blocks.OUTPUT ? "output" : "input");
-     var bType = Blockly.Blocks.Utilities.YailTypeToBlocklyTypeMap[yail][inputOrOutputName];
+     var bType = AI.Utilities.YailTypeToBlocklyTypeMap[yail][inputOrOutputName];
 
      if (bType != null || yail == 'any') {
        return bType;
@@ -764,35 +1235,87 @@ function resetComponentInstances() {
 /**
  * Displays the quiz in the browser.
  */
-function renderQuiz() {
-  if (DEBUG) console.log("RAM: renderQuiz()");
-  Blockly.mainWorkspace.clear(); 
-  var quizquestion = maindocument.getElementById('quiz_question');
-  var quizName = Blockly.Quizme.quizName;
-  if (quizquestion) {
-    quizquestion.innerHTML = mapQuizVariables(Blockly.Quizme, 
-        Blockly.Quizme.questionHTML, 
-        Blockly.Quizme[quizName].VariableMappings);  
-    quizquestion.style.backgroundColor = "#f3f0000";
-  }
-  var visibility = Blockly.Quizme.answerVisibility;
-  var quiz_answer = maindocument.getElementById('quiz_answer');
-  if (quiz_answer) {
-    quiz_answer.value = Blockly.Quizme.answerHTML;
-    quiz_answer.style.visibility = Blockly.Quizme.answerVisibility;
-    if (visibility == "visible") {
-      quiz_answer.hidden = false;
-    } else {
-      quiz_answer.hidden = true;
-    }
-  }
-  var quiz_result = maindocument.getElementById('quiz_result');
-  if (quiz_result)
-    quiz_result.innerHTML = Blockly.Quizme.resultHTML;
-  var hint_html = maindocument.getElementById('hint_html');
-  if (hint_html)
-    hint_html.innerHTML = "";
 
+function renderQuiz(quizdata) {
+  
+  if (DEBUG) console.log("RAM: renderQuiz()");
+
+  var workspace = Blockly.getMainWorkspace();
+  if (!workspace) return;
+
+  // --- 1. THE HANDSHAKE (Fixes the crash) ---
+  // We attach these IMMEDIATELY so that no console.log or block-init can fail.
+  workspace.getComponentDatabase = function() { return dummyComponentDb; };
+  workspace.getProcedureMap = function() { return dummyProcedureMap; };
+  workspace.getProcedureManager = function() { return dummyProcedureMap; };
+
+
+  workspace.getWarningHandler = function() {
+    return {
+      checkErrors: function() { return []; },
+      checkDisposedBlock: function() { return; },
+      updateWarning: function() { return; }
+    };
+  };
+
+  // --- 2. DEBUG LOGS ---
+  if (DEBUG) {
+    console.log("RAM: --- Rendering Debug ---");
+    console.log("RAM: Workspace exists:", !!workspace);
+    // Note: We check the return value of the function we just attached
+    console.log("RAM: Database attached to workspace:", !!workspace.getComponentDatabase());
+  }
+
+  // --- 3. DATA RESOLUTION (Your original logic) ---
+  var actualData = quizdata;
+  if (quizdata && !actualData.Xmltemplate && !actualData.xmltemplate) {
+     var currentName = Blockly.Quizme.quizName;
+     if (quizdata[currentName]) {
+        actualData = quizdata[currentName];
+        if (DEBUG) console.log("RAM: Resolved actualData from library for: " + currentName);
+     }
+  }
+
+  if (!actualData || (!actualData.Xmltemplate && !actualData.xmltemplate)) {
+    var quizName = Blockly.Quizme.quizName;
+    actualData = Blockly.Quizme[quizName];
+  }
+
+  if (!actualData) {
+    if (DEBUG) console.log("RAM: No valid quiz data found.");
+    return;
+  }
+
+  // --- 4. UI UPDATES (Your original logic) ---
+  var quizquestion = maindocument.getElementById('quiz_question');
+  if (quizquestion) {
+    var mappings = actualData.VariableMappings || [];
+    var html = actualData.QuestionHTML || actualData.Questionhtml || actualData.question_html || "";
+    quizquestion.innerHTML = mapQuizVariables(Blockly.Quizme, html, mappings);  
+  }
+
+  // --- 5. RENDER ---
+  var xmlText = actualData.Xmltemplate || actualData.xmltemplate || actualData.xml;
+// Force the instance to have the database the MIT code expects
+workspace.getComponentDatabase = function() { return dummyComponentDb; };
+workspace.getProcedureMap = function() { return dummyProcedureMap; };
+  if (xmlText && xmlText !== "undefined") {
+    try {
+      var xmlDom = Blockly.utils.xml.textToDom(xmlText);
+      workspace.clear();
+      
+      // Final safety check: ensure the database is still there after clear()
+      workspace.getComponentDatabase = function() { return dummyComponentDb; };
+      
+      Blockly.Xml.domToWorkspace(xmlDom, workspace);
+      if (DEBUG) console.log("RAM: Blocks rendered successfully.");
+    } catch (e) {
+      console.error("RAM: Error during renderQuiz execution: ", e);
+    }
+  } else {
+    console.error("RAM: Missing XML in actualData object.");
+  }
+  // add in show link
   var link_html = maindocument.getElementById('link_html');
   if (link_html) {
     if (ED_X) {
@@ -803,19 +1326,12 @@ function renderQuiz() {
        link_html.innerHTML = "";
     }
   }
-
-  var xmlStr = Blockly.Xml.domToText(Blockly.Quizme.xml);
-  var mappedStr = mapQuizVariables(Blockly.Quizme, xmlStr, Blockly.Quizme.VariableMappings);
-  if (mappedStr)
-    Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, Blockly.Xml.textToDom(mappedStr));
-  else 
-    Blockly.Xml.domToWorkspace(Blockly.mainWorkspace, Blockly.Quizme.xml);
 }
 
 /**
  * Handles the Submit/New Question toggle button.
  */
-function submitNewToggle() {
+function submitNewToggle(quizname) {
   if (DEBUG) console.log("RAM: submitNewToggle");
   var buttonLabel = maindocument.getElementById('submit_new_toggle').innerHTML;
   var result_element = maindocument.getElementById('quiz_result');
@@ -825,7 +1341,7 @@ function submitNewToggle() {
   } else if (buttonLabel == 'Submit') {
     Blockly.Quizme.evaluateUserAnswer();
   } else {
-    showQuiz();
+      showQuiz(quizname);
   }
 }
 
@@ -911,7 +1427,7 @@ Blockly.Quizme.giveFeedback = function(isCorrect, correctStr, mistakeStr, redo) 
     }
 
     // edX:  We save the workspace as a String
-    var wspace = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+    var wspace = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
     var wsStr = Blockly.Xml.domToText(wspace);
     if (ED_X) {
         console.log("RAM >>>>>>>>>>>>>> Quizme-helper updating edX state <<<<<<<<<<<<<<<<");
@@ -1011,7 +1527,7 @@ Blockly.Quizme.evaluateUserAnswer = function() {
     parent.document.getElementById('show_javascript').disabled = false;
     parent.document.getElementById('show_javascript').style.visibility = "visible";
   }
-  var wspace = Blockly.Xml.workspaceToDom(Blockly.mainWorkspace);
+  var wspace = Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace());
   var wsStr = Blockly.Xml.domToText(wspace);
 
   return [result, wsStr];  // Return an array with True/False and workspace blocks
@@ -1033,13 +1549,17 @@ Blockly.Quizme.evaluateUserAnswer = function() {
  */
 Blockly.Quizme.evaluateXmlBlocksAnswerType = function(helperObj, solution, mappings) {
   if (DEBUG) console.log("RAM: evaluateXmlBlocksAnswerType");
-  var resultXml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.mainWorkspace));
+  var resultXml = Blockly.Xml.domToText(Blockly.Xml.workspaceToDom(Blockly.getMainWorkspace()));
   resultXml = Blockly.Quizme.removeXY(resultXml);
   resultXml = Blockly.Quizme.removeIDs(resultXml);
   resultXml = Blockly.Quizme.removeTag("xml", resultXml);
 
   // HACK:  Replace 'logic_false' with logic_boolean' in user's answer
   resultXml = Blockly.Quizme.falseToBoolean(resultXml);
+
+  // New Blockly adds xmlns and is_generic attributes to mutation elements
+  // that old solution XML doesn't have. Strip them for comparison.
+  resultXml = Blockly.Quizme.normalizeMutationAttrs(resultXml);
 
   if (mappings) {
     solution = mapQuizVariables(helperObj, solution, mappings);
@@ -1050,6 +1570,7 @@ Blockly.Quizme.evaluateXmlBlocksAnswerType = function(helperObj, solution, mappi
   solution = Blockly.Quizme.removeXY(solution);
   solution = Blockly.Quizme.removeIDs(solution);
   solution = Blockly.Quizme.removeTag("xml", solution);
+  solution = Blockly.Quizme.normalizeMutationAttrs(solution);
 
   var result = resultXml.indexOf(solution) != -1;
   Blockly.Quizme.giveFeedback(result, 
@@ -1128,10 +1649,10 @@ Blockly.Quizme.setupFunctionDefinition = function(qname, helperObj, blocks) {
   }
 
   // Get the workspace blocks and  definitions and convert it to code.
-  Blockly.JavaScript.init();
+  Blockly.JavaScript.init(Blockly.common.getMainWorkspace());
   if (!blocks) 
-    blocks  = Blockly.mainWorkspace.topBlocks_;
-  var code = Blockly.JavaScript.workspaceToCode('JavaScript');  
+    blocks  = Blockly.getMainWorkspace().getTopBlocks(false);
+  var code = Blockly.JavaScript.workspaceToCode(Blockly.common.getMainWorkspace());  
   //  return code;
   var blockly_defs = Blockly.JavaScript.definitions_[fnName];
 
@@ -1326,10 +1847,10 @@ Blockly.Quizme.setupProcedureDefinition = function(qname, helperObj, blocks) {
   if (helperObj.procedure_inputs) {
     helperObj[qname].procedure_inputs = helperObj.procedure_inputs;
   }
-  Blockly.JavaScript.init();
+  Blockly.JavaScript.init(Blockly.common.getMainWorkspace());
   if (!blocks)
-    blocks  = Blockly.mainWorkspace.topBlocks_;
-  var code = Blockly.JavaScript.workspaceToCode('JavaScript');
+    blocks  = Blockly.getMainWorkspace().getTopBlocks(false);
+  var code = Blockly.JavaScript.workspaceToCode(Blockly.common.getMainWorkspace());
   return code; 
 }
 
@@ -1527,8 +2048,8 @@ Blockly.Quizme.evaluateStatement = function(helperObj) {
   var globals = getGlobalVariableNames(answerCode);
 
   // Get the testcode from the workspace
-  Blockly.JavaScript.init()
-  var testCode = Blockly.JavaScript.workspaceToCode('JavaScript');
+  Blockly.JavaScript.init(Blockly.common.getMainWorkspace())
+  var testCode = Blockly.JavaScript.workspaceToCode(Blockly.common.getMainWorkspace());
 
   testCode = "function test() { \n" + testCode + "\n var ret={";
   answerCode = "function test() { \n" + answerCode + "\n var ret={";
@@ -1556,23 +2077,28 @@ Blockly.Quizme.evaluateStatement = function(helperObj) {
  * @param str is a string contain attribute expressions such as x="85"
  *  and y="100".  These are removed and the resulting string returned.
  */
-Blockly.Quizme.removeXY = function(str) {
-  var startX = str.indexOf("x=");
-  var endX = str.indexOf('"', startX+3);
-  while (startX != -1) {
-    str = str.substring(0, startX) + str.substring(endX+1);
-    startX = str.indexOf("x=");
-    endX = str.indexOf('"', startX+3);
+Blockly.Quizme.removeXY = function(xml) {
+  // If xml is undefined or null, return an empty string to prevent the indexOf crash
+  if (!xml || typeof xml !== 'string') {
+     if (DEBUG) console.warn("RAM: removeXY received invalid XML:", xml);
+    // Return a random string that will NEVER match the other side
+    return "ERROR_INVALID_XML_" + Math.random();
   }
-  var startY = str.indexOf("y=");
-  var endY = str.indexOf('"', startY+3);
-  while (startY != -1) {
-    str = str.substring(0, startY) + str.substring(endY+1);
-    startY = str.indexOf("y=");
-    endY = str.indexOf('"', startY+3);
+
+  var res = xml;
+  // Existing logic...
+  while (res.indexOf(' x="') != -1) {
+    var i = res.indexOf(' x="');
+    var j = res.indexOf('"', i + 4);
+    res = res.substring(0, i) + res.substring(j + 1);
   }
-  return str;
-}
+  while (res.indexOf(' y="') != -1) {
+    var i = res.indexOf(' y="');
+    var j = res.indexOf('"', i + 4);
+    res = res.substring(0, i) + res.substring(j + 1);
+  }
+  return res;
+};
 
 /**
  * Removes the block IDs from the str
@@ -1589,6 +2115,19 @@ Blockly.Quizme.removeIDs = function(str) {
   }
   return str;
 }
+
+/**
+ * Strips xmlns and is_generic attributes from mutation elements.
+ * The new Blockly adds these attributes but old solution XML doesn't have them.
+ */
+Blockly.Quizme.normalizeMutationAttrs = function(str) {
+  if (!str || typeof str !== 'string') return str;
+  str = str.replace(/ xmlns="http:\/\/www\.w3\.org\/1999\/xhtml"/g, '');
+  str = str.replace(/ is_generic="false"/g, '');
+  // New Blockly omits inline attributes at default values, but old solution XML has them
+  str = str.replace(/ inline="(true|false)"/g, '');
+  return str;
+};
 
 /**
  * HACK: Replace logic_false with logic_boolean
