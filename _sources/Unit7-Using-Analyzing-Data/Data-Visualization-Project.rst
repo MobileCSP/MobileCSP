@@ -61,7 +61,7 @@ Learning Activities
     <ol>
     <li style="margin-bottom: 5px;">Work collaboratively to research, investigate and analyze a large data set making sure that your project meets the following specifications.
          <ol type="a">
-    <li><b>Data Sources:</b> For this project, your large data set must contain at least 1,000 data values or cells. (You may use one of <a href="https://docs.google.com/document/d/13qhmWAlwmUVWZQei5DJazUlYLyrWVHprRrfghWpv6_E/view" target="_blank">these data sources</a>, but you are encouraged to find others!)</li>
+    <li><b>Data Sources:</b> For this project, your large data set must contain at least 1,000 data values or cells. (You may use one of <a href="https://docs.google.com/document/d/13qhmWAlwmUVWZQei5DJazUlYLyrWVHprRrfghWpv6_E/view" target="_blank">these data sources</a>, but you are encouraged to find others. Alternatively, you can use an AI tool to find your data set. For example, use the prompt "show me a list of 10 downloadable data set links with at least 1000 values in csv format" and include the topics that you are interested in.)</li>
     <li><b>Questions &amp; Hypotheses:</b> Brainstorm with your partner 3-5 questions and corresponding hypotheses that you believe can be answered using your chosen data set. <br/>First, write a question you have about the data set you chose. <br/>Now, convert that question into a hypothesis (a statement) with your prediction about the data. <br/>Hypotheses take the form of "If __________, then _________." <br/>For example, a hypothesis about student debt data could be, "If the tuition costs are higher at an institution, the student debt will be higher."</li>
     </ol>
     </li>
