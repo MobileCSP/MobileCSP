@@ -70,13 +70,24 @@
   <script>
     // NOTE: Blockly injects a static toolbox in the form of an Xml tree. We want our toolbox to be dynamic but
     //  we must initialize it here. The TOOLBOX category serves as a static heading for the toolbox.
-
-    function initBlockly() {
+     // Added url logic
+  function initBlockly() {
       if (GLOBAL_DEBUG) console.log('RAM>>>>>>>>>>>>>>>: initBlockly');
 
-      // The quizzes are loaded by the script above and stored in global var quizzes.
-      initBlocklyFrame(quizzes);
-    }
+      // 1. Parse URL for Quiz Name
+      var urlParams = new URLSearchParams(window.location.search);
+      var quizname = urlParams.get('quizname');
+
+      // 2. Initialize the Frame
+      if (quizname) {
+        if (GLOBAL_DEBUG) console.log("RAM: Found quizname in URL: " + quizname);
+          // Pass the name from the URL into your helper
+            initBlocklyFrame(quizzes, quizname); 
+        } else {
+        // Fallback to default behavior if no URL param exists
+        initBlocklyFrame(quizzes);
+      }
+  }
   </script>
 
 </head>
