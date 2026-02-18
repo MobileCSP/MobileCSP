@@ -23,7 +23,6 @@
  * Feb. 2026 updated with new Blockly 
  * @author Beryl Hoffman (hoffmanb@elms.edu)
  * @author Joe Mazzone
- * 
  */
 
 
@@ -548,6 +547,54 @@ function createBogusParentFunctions() {
  */
 function initQuizme(quizname, quizmepath, arglist, quizdata) {
   //if (DEBUG) console.log("RAM initQuizme quizdata " + quizdata);
+  
+  // If quizname is not provided, try multiple fallbacks
+  if (!quizname) {
+    // Try 1: Parse from arglist (query string)
+    if (arglist) {
+      var params = arglist.split('&');
+      for (var i = 0; i < params.length; i++) {
+        var keyval = params[i].split('=');
+        if (keyval[0] == 'quizname') {
+          quizname = decodeURIComponent(keyval[1] || '');
+          break;
+        }
+      }
+    }
+    // Try 2: Read from hidden input field
+    if (!quizname) {
+      try {
+        var quiznameInput = maindocument.getElementById('quizname');
+        if (quiznameInput && quiznameInput.value) {
+          quizname = quiznameInput.value;
+        }
+      } catch (e) {
+        // Error accessing document, ignore
+      }
+    }
+    // Try 3: Parse from parent window URL directly
+    if (!quizname) {
+      try {
+        var parentUrl = maindocument.location.href || (window.parent && window.parent.location.href);
+        if (parentUrl) {
+          var urlParts = parentUrl.split('?');
+          if (urlParts.length > 1) {
+            var urlParams = urlParts[1].split('&');
+            for (var i = 0; i < urlParams.length; i++) {
+              var keyval = urlParams[i].split('=');
+              if (keyval[0] == 'quizname') {
+                quizname = decodeURIComponent(keyval[1] || '');
+                break;
+              }
+            }
+          }
+        }
+      } catch (e) {
+        // Error accessing parent URL, ignore
+      }
+    }
+  }
+  
   if (DEBUG) console.log("RAM: initializing ... quizname= " + quizname + " path=" + quizmepath + " arglist = " + arglist);
 
   createBogusParentFunctions();   // To handle translation
@@ -636,10 +683,11 @@ function initQuizme(quizname, quizmepath, arglist, quizdata) {
   Blockly.BlocklyEditor.startquizme();
   
   // Display a quiz question with the most data we have
-  //showQuiz(quizdata || quizname);
+  // Prioritize quizname over quizdata if quizname is provided
   // First question not loading, so we add a slight delay
   setTimeout(function() {
-    showQuiz(quizdata || quizname);
+    // Prioritize quizname string over quizdata object if quizname is provided
+    showQuiz(quizname || quizdata);
   }, 100);
 }
 

@@ -52,7 +52,18 @@ function initBlocklyFrame(quizdata) {
     for (var i = 0; i < params.length; i++) {
        var keyval = params[i].split('=');
        if (keyval[0] == 'quizname')
-         quizname = keyval[1];
+         quizname = decodeURIComponent(keyval[1] || '');
+    }
+  }
+  // If quizname not found in URL, try reading from parent document's hidden input field
+  if (!quizname) {
+    try {
+      var quiznameInput = window.parent.document.getElementById('quizname');
+      if (quiznameInput && quiznameInput.value) {
+        quizname = quiznameInput.value;
+      }
+    } catch (e) {
+      // Cross-origin or other error, ignore
     }
   }
 
